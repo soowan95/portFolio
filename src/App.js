@@ -7,7 +7,9 @@ import {
 import Navbar from "./page/Navbar";
 
 const routes = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<Navbar />}></Route>),
+  createRoutesFromElements(
+    <Route path="/portfolio" element={<Navbar />}></Route>,
+  ),
 );
 
 function App() {
