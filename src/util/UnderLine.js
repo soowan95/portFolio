@@ -6,7 +6,8 @@ function UnderLine({ pathname }) {
 
   return (
     <>
-      {location.pathname === pathname && (
+      {(location.pathname === pathname ||
+        location.pathname === pathname + "/") && (
         <motion.div
           style={{ border: "1px solid black", margin: "0 auto" }}
           initial={{ width: 0 }}
