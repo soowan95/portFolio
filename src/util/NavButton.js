@@ -1,12 +1,7 @@
 import { Box } from "@chakra-ui/react";
-import { useLocation, useNavigate } from "react-router-dom";
 import UnderLine from "./UnderLine";
 
-function NavButton({ pathname, text }) {
-  const location = useLocation();
-
-  const navigate = useNavigate();
-
+function NavButton({ comp, text, scrollToComp }) {
   return (
     <>
       <Box
@@ -14,16 +9,16 @@ function NavButton({ pathname, text }) {
         textAlign={"center"}
         mt={"30px"}
         cursor={"pointer"}
-        onClick={() => navigate(pathname)}
+        onClick={() => scrollToComp(comp)}
         color={
-          location.pathname === pathname || location.pathname === pathname + "/"
-            ? "blue"
-            : "black"
+          sessionStorage.getItem("comp") === comp
+            ? "rgba(74,88,225,0.66)"
+            : "rgba(0,0,0,0.48)"
         }
       >
         {text}
       </Box>
-      <UnderLine pathname={pathname} />
+      <UnderLine comp={comp} />
     </>
   );
 }

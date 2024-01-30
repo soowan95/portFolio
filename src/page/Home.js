@@ -1,12 +1,42 @@
 import { Box, Flex, Image } from "@chakra-ui/react";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import UnderLine from "../util/UnderLine";
 import NavButton from "../util/NavButton";
+import Info from "./Info";
+import About from "./About";
+import { scroller, Element } from "react-scroll";
+import { useEffect, useState } from "react";
 
 function Home() {
-  const location = useLocation();
+  const [comp, setComp] = useState("info");
 
-  const navigate = useNavigate();
+  useEffect(() => {
+    sessionStorage.setItem("comp", "info");
+    window.addEventListener("scroll", handlescroll);
+
+    return () => {
+      window.removeEventListener("scroll", handlescroll);
+    };
+  }, []);
+
+  const scrollToComp = (comp) => {
+    scroller.scrollTo(comp, {
+      duration: 1000,
+      delay: 1,
+      smooth: "easeInOut",
+    });
+  };
+
+  const handlescroll = () => {
+    const scrollPosotion = window.scrollY;
+    console.log("Scroll Position: " + scrollPosotion);
+
+    if (scrollPosotion < 500) {
+      sessionStorage.setItem("comp", "info");
+      setComp("info");
+    } else {
+      sessionStorage.setItem("comp", "about");
+      setComp("about");
+    }
+  };
 
   return (
     <Flex>
@@ -38,11 +68,17 @@ function Home() {
         <Box textAlign={"center"} fontSize={"1.5rem"}>
           Back end developer
         </Box>
-        <NavButton pathname={"/portfolio"} text={"home"} />
-        <NavButton pathname={"/portfolio/about"} text={"about"} />
+        <NavButton comp={"info"} text={"home"} scrollToComp={scrollToComp} />
+        <NavButton comp={"about"} text={"about"} scrollToComp={scrollToComp} />
       </Box>
       <Box w={"800px"} position={"absolute"} left={"700px"}>
-        <Outlet />
+        <Element name={"info"}>
+          <Info />
+        </Element>
+        <Element name={"about"}>
+          <About />
+        </Element>
+        <Box h={"5vh"}></Box>
       </Box>
     </Flex>
   );
