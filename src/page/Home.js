@@ -1,6 +1,7 @@
 import { Box, Flex, Image } from "@chakra-ui/react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import UnderLine from "../util/UnderLine";
+import NavButton from "../util/NavButton";
 
 function Home() {
   const location = useLocation();
@@ -37,26 +38,8 @@ function Home() {
         <Box textAlign={"center"} fontSize={"1.5rem"}>
           Back end developer
         </Box>
-        <Box
-          fontSize={"1.2rem"}
-          textAlign={"center"}
-          mt={"20px"}
-          cursor={"pointer"}
-          onClick={() => navigate("/portfolio")}
-        >
-          home
-        </Box>
-        <UnderLine pathname={"/portfolio"} />
-        <Box
-          fontSize={"1.2rem"}
-          textAlign={"center"}
-          mt={"20px"}
-          cursor={"pointer"}
-          onClick={() => navigate("/portfolio/about")}
-        >
-          about
-        </Box>
-        <UnderLine pathname={"/portfolio/about"} />
+        <NavButton pathname={"/portfolio"} text={"home"} />
+        <NavButton pathname={"/portfolio/about"} text={"about"} />
       </Box>
       <Box w={"800px"} position={"absolute"} left={"700px"}>
         <Outlet />

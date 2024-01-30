@@ -9,7 +9,7 @@ function UnderLine({ pathname }) {
       {(location.pathname === pathname ||
         location.pathname === pathname + "/") && (
         <motion.div
-          style={{ border: "1px solid black", margin: "0 auto" }}
+          style={{ borderBottom: "1px solid blue", margin: "0 auto" }}
           initial={{ width: 0 }}
           animate={{ width: "70px" }}
           transition={{ duration: 1, ease: "easeInOut" }}
