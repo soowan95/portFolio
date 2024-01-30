@@ -4,11 +4,14 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Navbar from "./page/Navbar";
+import Home from "./page/Home";
+import About from "./page/About";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/portfolio" element={<Navbar />}></Route>,
+    <Route path="/portfolio" element={<Home />}>
+      <Route path="about" element={<About />} />
+    </Route>,
   ),
 );
 
