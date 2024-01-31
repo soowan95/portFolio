@@ -22,7 +22,7 @@
     .info-header {
         width: 90%;
         margin-left: 5%;
-        padding-top: 300px;
+        padding-top: 250px;
         font-size: 1.5rem;
     }
     .info-body {
@@ -89,6 +89,7 @@
         margin-top: 10px
     }
     .content {
+        width: 70%;
         position: absolute;
         left: 150px
     }
@@ -112,11 +113,12 @@
     }
     .about-header {
         font-size: 2rem;
+        margin-left: -3%;
         margin-top: 350px;
     }
     .about-body {
-        width: 600px;
-        margin-left: 15%;
+        width: 85%;
+        margin-left: 12%;
         margin-top: 30px;
     }
     .about-body-title {
@@ -128,8 +130,8 @@
         margin-left: 30px;
     }
     .about-body-content {
-        width: 600px;
-        margin-left: 15%;
+        width: 85%;
+        margin-left: 12%;
         margin-top: 30px;
     }
     .about-body-content-text {
