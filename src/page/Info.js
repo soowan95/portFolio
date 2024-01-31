@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import "../css/Media.css";
 
 function Info() {
   return (
@@ -7,12 +8,7 @@ function Info() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
-        style={{
-          width: "85%",
-          marginLeft: "15%",
-          paddingTop: "300px",
-          fontSize: "4rem",
-        }}
+        className={"info-header"}
       >
         안녕하십니까!
       </motion.div>
@@ -21,12 +17,9 @@ function Info() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 2 }}
         style={{
-          width: "85%",
-          marginLeft: "15%",
-          marginTop: "50px",
-          fontSize: "2rem",
           color: "#737272",
         }}
+        className={"info-body"}
       >
         신입 개발자
         <strong style={{ color: "black" }}>김수완</strong>
@@ -37,12 +30,9 @@ function Info() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 2 }}
         style={{
-          width: "85%",
-          marginLeft: "15%",
-          marginTop: "50px",
-          fontSize: "1.6rem",
           color: "#737272",
         }}
+        className={"info-footer"}
       >
         기업의 발전을 위해 저의{" "}
         <motion.div

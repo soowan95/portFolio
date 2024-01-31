@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 
 function UnderLine({ comp }) {
-  const location = useLocation();
-
   return (
     <>
       {sessionStorage.getItem("comp") === comp && (

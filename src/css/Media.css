@@ -1,0 +1,194 @@
+/* 모바일 */
+@media only screen and (max-width: 600px) {
+    .desktop-tablet-nav-bar {
+        display: none;
+    }
+    .nav-bar-photo {
+        width: 80px;
+        height: 80px;
+        margin: 20px auto;
+    }
+    .nav-bar-info {
+        font-size: 1rem;
+    }
+    .nav-bar-button {
+        font-size: 1rem;
+        margin-top: 10px
+    }
+    .content {
+        position: absolute;
+    }
+    .info-header {
+        width: 85%;
+        margin-left: 100px;
+        padding-top: 100px;
+        font-size: 2rem;
+    }
+    .info-body {
+        width: 85%;
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+    .info-footer {
+        width: 85%;
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
+    .about-header {
+        width: 500px;
+        font-size: 1.5rem;
+        margin-top: 350px;
+    }
+    .about-body {
+        width: 470px;
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+    .about-body-title {
+        font-size: 1rem;
+    }
+    .about-body-content {
+        width: 470px;
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+    .about-body-content-text {
+        font-size: 0.7rem;
+    }
+}
+
+/* 태블릿 */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .desktop-tablet-nav-bar {
+        width: 150px;
+        height: 100vh;
+        position: fixed;
+    }
+    .mobile-nav-bar {
+        display: none;
+    }
+    .nav-bar-photo {
+        width: 80px;
+        height: 80px;
+        margin: 30px auto;
+    }
+    .nav-bar-info {
+        font-size: 1rem;
+    }
+    .nav-bar-button {
+        font-size: 1rem;
+        margin-top: 10px
+    }
+    .content {
+        position: absolute;
+        left: 150px
+    }
+    .info-header {
+        width: 85%;
+        margin-left: 150px;
+        padding-top: 100px;
+        font-size: 2rem;
+    }
+    .info-body {
+        width: 85%;
+        margin-left: 150px;
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+    .info-footer {
+        width: 85%;
+        margin-left: 150px;
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
+    .about-header {
+        font-size: 2rem;
+        margin-top: 350px;
+    }
+    .about-body {
+        width: 600px;
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+    .about-body-title {
+        font-size: 1.3rem;
+    }
+    .about-body-content {
+        width: 600px;
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+    .about-body-content-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* 테스크톱 */
+@media only screen and (min-width: 1025px) {
+    .desktop-tablet-nav-bar {
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        left: 400px;
+    }
+    .mobile-nav-bar {
+        display: none;
+    }
+    .nav-bar-photo {
+        width: 150px;
+        height: 150px;
+        margin: 50px auto;
+    }
+    .nav-bar-info {
+        font-size: 1.5rem;
+    }
+    .nav-bar-button {
+        font-size: 1.2rem;
+        margin-top: 30px
+    }
+    .content {
+        width: 800px;
+        position: absolute;
+        left: 700px
+    }
+    .info-header {
+        width: 85%;
+        margin-left: 15%;
+        padding-top: 300px;
+        font-size: 4rem;
+    }
+    .info-body {
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+    .info-footer {
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 50px;
+        font-size: 1.6rem;
+    }
+    .about-header {
+        font-size: 2.5rem;
+        margin-top: 500px;
+    }
+    .about-body {
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 50px;
+    }
+    .about-body-title {
+        font-size: 1.8rem;
+    }
+    .about-body-content {
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+    .about-body-content-text {
+        font-size: 1.1rem;
+    }
+}

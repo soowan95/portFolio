@@ -1,9 +1,11 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
-import NavButton from "../util/NavButton";
+import { Box, Flex } from "@chakra-ui/react";
 import Info from "./Info";
 import About from "./About";
-import { scroller, Element } from "react-scroll";
+import { Element, scroller } from "react-scroll";
 import { useEffect, useState } from "react";
+import DesktopTabletNavBar from "../util/DesktopTabletNavBar";
+import "../css/Media.css";
+import MobileNavBar from "../util/MobileNavBar";
 
 function Home() {
   const [comp, setComp] = useState("info");
@@ -40,38 +42,13 @@ function Home() {
 
   return (
     <Flex>
-      <Box
-        w="300px"
-        h={"100vh"}
-        bg={"#b9b7b7"}
-        position={"fixed"}
-        left={"400px"}
-      >
-        <Box
-          borderRadius={"100%"}
-          w={"150px"}
-          h={"150px"}
-          m={"50px auto"}
-          overflow={"hidden"}
-        >
-          <Image src={`${process.env.PUBLIC_URL}/img/photo.jpg`} />
-        </Box>
-        <Box
-          fontSize={"2rem"}
-          textAlign={"center"}
-          mt={"-20px"}
-          fontFamily={"serif"}
-          fontWeight={"bolder"}
-        >
-          김수완
-        </Box>
-        <Box textAlign={"center"} fontSize={"1.5rem"}>
-          Back end developer
-        </Box>
-        <NavButton comp={"info"} text={"home"} scrollToComp={scrollToComp} />
-        <NavButton comp={"about"} text={"about"} scrollToComp={scrollToComp} />
+      <Box className={"mobile-nav-bar"}>
+        <MobileNavBar scrollToComp={scrollToComp} />
       </Box>
-      <Box w={"800px"} position={"absolute"} left={"700px"}>
+      <Box bg={"#b9b7b7"} className={"desktop-tablet-nav-bar"}>
+        <DesktopTabletNavBar scrollToComp={scrollToComp} />
+      </Box>
+      <Box className={"content"}>
         <Element name={"info"}>
           <Info />
         </Element>
