@@ -19,25 +19,25 @@
         position: absolute;
     }
     .info-header {
-        width: 100%;
-        margin-left: 10px;
-        padding-top: 100px;
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 300px;
         font-size: 1.5rem;
     }
     .info-body {
-        width: 100%;
-        margin-left: 10px;
+        width: 90%;
+        margin-left: 5%;
         margin-top: 50px;
         font-size: 1.2rem;
     }
     .info-footer {
-        width: 100%;
-        margin-left: 10px;
+        width: 90%;
+        margin-left: 5%;
         margin-top: 50px;
         font-size: 1rem;
     }
     .about-header {
-        width: 100%;
+        width: 90%;
         font-size: 1.2rem;
         margin-left: -10%;
         margin-top: 350px;
