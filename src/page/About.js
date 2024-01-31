@@ -409,7 +409,7 @@ function About({ handleScroll }) {
           mt={"20px"}
           className={"about-footer-title"}
         >
-          저를 가장 잘 표현할 수 있는 세가지 키워드입니다.
+          저를 가장 잘 표현하는 키워드입니다.
         </Box>
         <Box textAlign={"center"} my={"20px"}>
           항상 겸손한 마음으로 배우려 노력하겠습니다.

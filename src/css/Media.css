@@ -79,7 +79,7 @@
         margin-top: 50px
     }
     .about-footer-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .skills-header {
         font-size: 1.8rem;
@@ -173,7 +173,7 @@
         font-size: 0.9rem;
     }
     .about-icon-flex {
-        width: 65%;
+        width: 85%;
         margin-left: 12%;
         margin-top: 100px;
     }
@@ -182,12 +182,12 @@
         height: 100px;
     }
     .about-footer {
-        width: 65%;
+        width: 85%;
         margin-left: 12%;
         margin-top: 50px
     }
     .about-footer-title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .skills-header {
         font-size: 1.8rem;
@@ -283,7 +283,7 @@
         font-size: 1.1rem;
     }
     .about-icon-flex {
-        width: 55%;
+        width: 75%;
         margin-left: 5%;
         margin-top: 100px;
     }
@@ -292,12 +292,12 @@
         height: 100px;
     }
     .about-footer {
-        width: 55%;
+        width: 75%;
         margin-left: 5%;
         margin-top: 50px
     }
     .about-footer-title {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
     .skills-header {
         width: 95%;
