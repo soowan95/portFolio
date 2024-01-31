@@ -137,6 +137,24 @@
     .about-body-content-text {
         font-size: 0.9rem;
     }
+    .skills-header {
+        font-size: 1.8rem;
+        margin-left: -3%;
+        margin-top: 200px;
+    }
+    .skills-block {
+        border: 1px solid;
+        height: 200px;
+    }
+    .skills-body-spacing {
+        width: 85%;
+        margin-left: 12%;
+        margin-top: 50px;
+    }
+    .skills-body-progress {
+        width: 85%;
+        margin-left: 12%;
+    }
 }
 
 /* 테스크톱 */
@@ -163,35 +181,37 @@
         margin-top: 30px
     }
     .content {
-        width: 800px;
+        width: 60%;
         position: absolute;
         left: 700px
     }
     .info-header {
-        width: 85%;
-        margin-left: 15%;
+        width: 95%;
+        margin-left: 5%;
         padding-top: 300px;
         font-size: 4rem;
     }
     .info-body {
-        width: 85%;
-        margin-left: 15%;
+        width: 95%;
+        margin-left: 5%;
         margin-top: 50px;
         font-size: 2rem;
     }
     .info-footer {
-        width: 85%;
-        margin-left: 15%;
+        width: 95%;
+        margin-left: 5%;
         margin-top: 50px;
         font-size: 1.6rem;
     }
     .about-header {
+        width: 95%;
+        margin-left: -10%;
         font-size: 2.5rem;
         margin-top: 500px;
     }
     .about-body {
-        width: 85%;
-        margin-left: 15%;
+        width: 75%;
+        margin-left: 5%;
         margin-top: 50px;
     }
     .about-body-title {
@@ -203,11 +223,30 @@
         margin-left: 40px;
     }
     .about-body-content {
-        width: 85%;
-        margin-left: 15%;
+        width: 75%;
+        margin-left: 5%;
         margin-top: 30px;
     }
     .about-body-content-text {
         font-size: 1.1rem;
+    }
+    .skills-header {
+        width: 95%;
+        margin-left: -10%;
+        font-size: 2.5rem;
+        margin-top: 200px;
+    }
+    .skills-block {
+        border: 1px solid;
+        height: 200px;
+    }
+    .skills-body-spacing {
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+    .skills-body-progress {
+        width: 75%;
+        margin-left: 5%;
     }
 }

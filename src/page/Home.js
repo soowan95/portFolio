@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import DesktopTabletNavBar from "../util/DesktopTabletNavBar";
 import "../css/Media.css";
 import MobileNavBar from "../util/MobileNavBar";
+import Skills from "./Skills";
 
 function Home() {
   const [comp, setComp] = useState("info");
@@ -34,9 +35,12 @@ function Home() {
     if (scrollPosotion < 500) {
       sessionStorage.setItem("comp", "info");
       setComp("info");
-    } else {
+    } else if (scrollPosotion < 1600) {
       sessionStorage.setItem("comp", "about");
       setComp("about");
+    } else {
+      sessionStorage.setItem("comp", "skills");
+      setComp("skills");
     }
   };
 
@@ -45,7 +49,7 @@ function Home() {
       <Box className={"mobile-nav-bar"}>
         <MobileNavBar scrollToComp={scrollToComp} />
       </Box>
-      <Box bg={"#b9b7b7"} className={"desktop-tablet-nav-bar"}>
+      <Box bg={"#e1e1e1"} className={"desktop-tablet-nav-bar"}>
         <DesktopTabletNavBar scrollToComp={scrollToComp} />
       </Box>
       <Box className={"content"}>
@@ -54,6 +58,9 @@ function Home() {
         </Element>
         <Element name={"about"}>
           <About />
+        </Element>
+        <Element name={"skills"}>
+          <Skills />
         </Element>
         <Box h={"5vh"}></Box>
       </Box>

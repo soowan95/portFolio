@@ -25,6 +25,7 @@ function DesktopTabletNavBar({ scrollToComp }) {
       </Box>
       <NavButton comp={"info"} text={"home"} scrollToComp={scrollToComp} />
       <NavButton comp={"about"} text={"about"} scrollToComp={scrollToComp} />
+      <NavButton comp={"skills"} text={"skills"} scrollToComp={scrollToComp} />
     </>
   );
 }

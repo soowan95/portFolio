@@ -23,6 +23,14 @@ function About() {
         }}
         className={"about-header"}
       >
+        <Box
+          letterSpacing={"5px"}
+          fontSize={"1rem"}
+          color={"#8a8989"}
+          mb={"10px"}
+        >
+          ABOUT ME
+        </Box>
         ❔ 저는 이런 사람입니다.
       </motion.div>
       <motion.div
@@ -124,7 +132,7 @@ function About() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 1 }}
         onClick={() => {
           if (index === 1) toggle1.onToggle();
           else if (index === 3) toggle3.onToggle();
@@ -228,7 +236,7 @@ function About() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1 }}
         onClick={() => {
           if (index === 1) toggle1.onToggle();
           else if (index === 2) toggle2.onToggle();
@@ -276,7 +284,7 @@ function About() {
           </Box>
           <Box className={"about-body-content-text"}>
             전 직장에서 근무 중 개발에 대한 지식은 없었지만 여러 문서들의
-            전산화를 위해 구글 스프레드 시트와 App script를 공부하여
+            전산화를 위해 구글 스프레드 시트와 Apps script를 공부하여
             해결했습니다.
           </Box>
         </Flex>
