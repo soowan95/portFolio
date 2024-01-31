@@ -1,11 +1,20 @@
 import { motion } from "framer-motion";
 import { Box, Image, SimpleGrid } from "@chakra-ui/react";
 import Progress from "../util/Progress";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-function Skills() {
+function Skills({ handleScroll }) {
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) handleScroll("skills");
+  }, [inView]);
+
   return (
     <Box position={"relative"}>
       <motion.div
+        ref={ref}
         initial={{ opacity: 0, x: "5%" }}
         whileInView={{ opacity: 1, x: "15%" }}
         transition={{ duration: 1 }}

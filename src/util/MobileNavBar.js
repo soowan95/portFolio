@@ -37,7 +37,7 @@ function MobileNavBar({ scrollToComp }) {
       >
         <DrawerOverlay />
         <DrawerContent bg={"#e1e1e1"}>
-          <DesktopTabletNavBar />
+          <DesktopTabletNavBar scrollToComp={scrollToComp} />
         </DrawerContent>
       </Drawer>
     </>

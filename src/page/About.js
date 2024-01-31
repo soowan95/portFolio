@@ -1,20 +1,34 @@
 import { motion } from "framer-motion";
 import { Box, Collapse, Flex, useDisclosure } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircle,
+  faPersonPraying,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import "../css/Media.css";
+import { useInView } from "react-intersection-observer";
+import AboutIcon from "../util/AboutIcon";
+import { faFaceLaughBeam } from "@fortawesome/free-regular-svg-icons";
 
-function About() {
+function About({ handleScroll }) {
   const [index, setIndex] = useState(0);
 
   const toggle1 = useDisclosure();
   const toggle2 = useDisclosure();
   const toggle3 = useDisclosure();
 
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) handleScroll("about");
+  }, [inView]);
+
   return (
     <>
       <motion.div
+        ref={ref}
         initial={{ opacity: 0, x: "5%" }}
         whileInView={{ opacity: 1, x: "15%" }}
         transition={{ duration: 1 }}
@@ -346,6 +360,61 @@ function About() {
           </Box>
         </Flex>
       </Collapse>
+      <Flex className={"about-icon-flex"} justifyContent={"space-between"}>
+        <motion.div
+          className={"about-icon"}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3, type: "spring" }}
+        >
+          <AboutIcon text={"팀워크"} color={"#e0d764"}>
+            <FontAwesomeIcon icon={faUserGroup} />
+          </AboutIcon>
+        </motion.div>
+        <motion.div
+          className={"about-icon"}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3, type: "spring" }}
+        >
+          <AboutIcon text={"긍정"} color={"#7ed9d9"}>
+            <FontAwesomeIcon icon={faFaceLaughBeam} />
+          </AboutIcon>
+        </motion.div>
+        <motion.div
+          className={"about-icon"}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3, type: "spring" }}
+        >
+          <AboutIcon text={"헌신"} color={"#7fe181"}>
+            <FontAwesomeIcon icon={faPersonPraying} />
+          </AboutIcon>
+        </motion.div>
+      </Flex>
+      <motion.div
+        className={"about-footer"}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 3 }}
+        style={{
+          background: "rgba(253,179,155,0.53)",
+          border: "2px solid rgb(253,179,155)",
+          borderRadius: "10px",
+        }}
+      >
+        <Box
+          textAlign={"center"}
+          fontWeight={"bolder"}
+          mt={"20px"}
+          className={"about-footer-title"}
+        >
+          저를 가장 잘 표현할 수 있는 세가지 키워드입니다.
+        </Box>
+        <Box textAlign={"center"} my={"20px"}>
+          항상 겸손한 마음으로 배우려 노력하겠습니다.
+        </Box>
+      </motion.div>
     </>
   );
 }

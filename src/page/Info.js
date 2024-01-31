@@ -1,10 +1,19 @@
 import { motion } from "framer-motion";
 import "../css/Media.css";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-function Info() {
+function Info({ handleScroll }) {
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) handleScroll("info");
+  }, [inView]);
+
   return (
     <>
       <motion.div
+        ref={ref}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}

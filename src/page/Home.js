@@ -13,11 +13,6 @@ function Home() {
 
   useEffect(() => {
     sessionStorage.setItem("comp", "info");
-    window.addEventListener("scroll", handlescroll);
-
-    return () => {
-      window.removeEventListener("scroll", handlescroll);
-    };
   }, []);
 
   const scrollToComp = (comp) => {
@@ -28,20 +23,9 @@ function Home() {
     });
   };
 
-  const handlescroll = () => {
-    const scrollPosotion = window.scrollY;
-    console.log("Scroll Position: " + scrollPosotion);
-
-    if (scrollPosotion < 500) {
-      sessionStorage.setItem("comp", "info");
-      setComp("info");
-    } else if (scrollPosotion < 1600) {
-      sessionStorage.setItem("comp", "about");
-      setComp("about");
-    } else {
-      sessionStorage.setItem("comp", "skills");
-      setComp("skills");
-    }
+  const handleScroll = (compName) => {
+    sessionStorage.setItem("comp", compName);
+    setComp(compName);
   };
 
   return (
@@ -54,13 +38,13 @@ function Home() {
       </Box>
       <Box className={"content"}>
         <Element name={"info"}>
-          <Info />
+          <Info handleScroll={handleScroll} />
         </Element>
         <Element name={"about"}>
-          <About />
+          <About handleScroll={handleScroll} />
         </Element>
         <Element name={"skills"}>
-          <Skills />
+          <Skills handleScroll={handleScroll} />
         </Element>
         <Box h={"5vh"}></Box>
       </Box>

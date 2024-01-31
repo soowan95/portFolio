@@ -64,6 +64,41 @@
     .about-body-content-text {
         font-size: 0.7rem;
     }
+    .about-icon-flex {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 100px;
+    }
+    .about-icon {
+        width: 30%;
+        height: 100px;
+    }
+    .about-footer {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 50px
+    }
+    .about-footer-title {
+        font-size: 1.2rem;
+    }
+    .skills-header {
+        font-size: 1.8rem;
+        margin-left: -3%;
+        margin-top: 200px;
+    }
+    .skills-block {
+        border: 1px solid;
+        height: 200px;
+    }
+    .skills-body-spacing {
+        width: 85%;
+        margin-left: 12%;
+        margin-top: 50px;
+    }
+    .skills-body-progress {
+        width: 85%;
+        margin-left: 12%;
+    }
 }
 
 /* 태블릿 */
@@ -136,6 +171,23 @@
     }
     .about-body-content-text {
         font-size: 0.9rem;
+    }
+    .about-icon-flex {
+        width: 65%;
+        margin-left: 12%;
+        margin-top: 100px;
+    }
+    .about-icon {
+        width: 30%;
+        height: 100px;
+    }
+    .about-footer {
+        width: 65%;
+        margin-left: 12%;
+        margin-top: 50px
+    }
+    .about-footer-title {
+        font-size: 1.2rem;
     }
     .skills-header {
         font-size: 1.8rem;
@@ -229,6 +281,23 @@
     }
     .about-body-content-text {
         font-size: 1.1rem;
+    }
+    .about-icon-flex {
+        width: 55%;
+        margin-left: 5%;
+        margin-top: 100px;
+    }
+    .about-icon {
+        width: 30%;
+        height: 100px;
+    }
+    .about-footer {
+        width: 55%;
+        margin-left: 5%;
+        margin-top: 50px
+    }
+    .about-footer-title {
+        font-size: 1.3rem;
     }
     .skills-header {
         width: 95%;
