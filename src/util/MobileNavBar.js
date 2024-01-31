@@ -23,6 +23,7 @@ function MobileNavBar({ scrollToComp }) {
         position={"fixed"}
         top={"20px"}
         left={"30px"}
+        zIndex={2}
       >
         <FontAwesomeIcon icon={faBars} />
       </Box>

@@ -44,13 +44,7 @@ function About() {
           className={"about-body-title"}
         >
           1️⃣ 저는 개인보다 팀을 중시하는 사람입니다. <br />
-          <span
-            style={{
-              fontSize: "1rem",
-              fontWeight: "100",
-              marginLeft: "40px",
-            }}
-          >
+          <span className={"about-body-semi-title"}>
             - 팀으로 운영되는 헬스 트레이너 팀, 특전부대 장교 출신!
           </span>
         </Box>
@@ -147,13 +141,7 @@ function About() {
           className={"about-body-title"}
         >
           2️⃣ 저는 긍정적이고 책임감이 투철한 사람입니다. <br />
-          <span
-            style={{
-              fontSize: "1rem",
-              fontWeight: "100",
-              marginLeft: "40px",
-            }}
-          >
+          <span className={"about-body-semi-title"}>
             - 좌우명 : 긍정적인 사고가 긍정적인 결과를 만든다!
           </span>
         </Box>
@@ -260,13 +248,7 @@ function About() {
           className={"about-body-title"}
         >
           3️⃣ 입사 후에 더욱 발전하는 제가 되겠습니다. <br />
-          <span
-            style={{
-              fontSize: "1rem",
-              fontWeight: "100",
-              marginLeft: "40px",
-            }}
-          >
+          <span className={"about-body-semi-title"}>
             - 개인의 발전이 곧 조직의 발전이다!
           </span>
         </Box>
