@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 /* 모바일 */
 @media only screen and (max-width: 600px) {
     .desktop-tablet-nav-bar {
@@ -76,7 +79,7 @@
     .about-footer {
         width: 90%;
         margin-left: 5%;
-        margin-top: 50px
+        margin-top: 50px;
     }
     .about-footer-title {
         font-size: 1.1rem;
