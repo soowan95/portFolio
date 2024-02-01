@@ -401,7 +401,7 @@
     .career-header-box {
         width: 75%;
         margin-left: 5%;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     .career-header-box-placing {
         height: 1px;
@@ -411,6 +411,16 @@
         margin-top: 30px;
         margin-bottom: 30px
     }
+    .career-header-content {
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 70px;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border: 1px solid;
+        text-align: center;
+        padding: 2%;
+    }
     .career-body {
         width: 75%;
         margin-left: 6%;
@@ -418,8 +428,19 @@
     }
     .career-body-title {
         font-size: 1.5rem;
+        font-weight: bolder;
         width: 75%;
         margin-left: 5%;
-        margin-top: 30px;
+        margin-top: 200px;
+    }
+    .career-body-content {
+        font-weight: bold;
+    }
+    .career-body-content-text {
+        border: 1px solid #9f9f9f;
+        color: #9f9f9f;
+        width: 80%;
+        padding: 3%;
+        margin-top: 10px;
     }
 }

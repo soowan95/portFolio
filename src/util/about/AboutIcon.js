@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import "../css/Media.css";
+import "../../css/Media.css";
 
 function AboutIcon({ children, text, color }) {
   return (

@@ -8,7 +8,7 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
-import AboutIcon from "../util/AboutIcon";
+import AboutIcon from "../util/about/AboutIcon";
 import { faFaceLaughBeam } from "@fortawesome/free-regular-svg-icons";
 
 function About({ handleScroll }) {

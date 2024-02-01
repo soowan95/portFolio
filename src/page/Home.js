@@ -48,7 +48,7 @@ function Home() {
           <Skills handleScroll={handleScroll} />
         </Element>
         <Element name={"career"}>
-          <Career handleScroll={handleScroll} />
+          <Career handleScroll={handleScroll} scrollToComp={scrollToComp} />
         </Element>
         <Box h={"5vh"}></Box>
       </Box>

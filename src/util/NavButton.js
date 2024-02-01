@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import UnderLine from "./UnderLine";
+import UnderLine from "./csscomp/UnderLine";
 import "../css/Media.css";
 
 function NavButton({ comp, text, scrollToComp }) {

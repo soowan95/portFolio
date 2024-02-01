@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Box, Image, SimpleGrid } from "@chakra-ui/react";
-import Progress from "../util/Progress";
+import Progress from "../util/csscomp/Progress";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
