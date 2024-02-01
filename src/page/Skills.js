@@ -5,17 +5,18 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 function Skills({ handleScroll }) {
-  const [ref, inView] = useInView();
+  const [dbref, dbinView] = useInView();
+  const [mref, minView] = useInView();
 
   useEffect(() => {
-    if (inView) handleScroll("skills");
-  }, [inView]);
+    if (dbinView || minView) handleScroll("skills");
+  }, [dbinView, minView]);
 
   return (
     <>
       <Box position={"relative"} className={"desktop-tablet-skills"}>
         <motion.div
-          ref={ref}
+          ref={dbref}
           initial={{ opacity: 0, x: "5%" }}
           whileInView={{ opacity: 1, x: "15%" }}
           transition={{ duration: 1 }}
@@ -238,7 +239,7 @@ function Skills({ handleScroll }) {
       </Box>
       <Box className={"mobile-skills"}>
         <motion.div
-          ref={ref}
+          ref={mref}
           initial={{ opacity: 0, x: "5%" }}
           whileInView={{ opacity: 1, x: "15%" }}
           transition={{ duration: 1 }}
