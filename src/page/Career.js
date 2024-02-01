@@ -65,7 +65,7 @@ function Career({ handleScroll, scrollToComp }) {
           <Divider />
         </motion.div>
         <CareerContent
-          content={"7공수특전여단(부중대장, 정작장교)"}
+          content={"7공수특전여단(정작장교)"}
           duration={"2018.06 ~ 2020.06"}
           scrollToComp={scrollToComp}
           comp={"army"}
@@ -80,6 +80,8 @@ function Career({ handleScroll, scrollToComp }) {
         <CareerContent
           content={"숭실대학교(수학과)"}
           duration={"2014.03 ~ 2018.02"}
+          scrollToComp={scrollToComp}
+          comp={"university"}
         />
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -104,7 +106,7 @@ function Career({ handleScroll, scrollToComp }) {
       </motion.div>
       <Element name={"gym"}>
         <Box className={"career-body-title"} color={"purple"}>
-          파운드짐(헬스 트레이너)
+          파운드짐
         </Box>
       </Element>
       <CareerBody content={"기존의 센터와 달리 팀으로 운영"}>
@@ -127,7 +129,7 @@ function Career({ handleScroll, scrollToComp }) {
       </CareerBody>
       <Element name={"army"}>
         <Box className={"career-body-title"} color={"green"}>
-          7공수특전여단(부중대장, 정작장교)
+          7공수특전여단
         </Box>
       </Element>
       <CareerBody content={"한계를 극복했던 부중대장 시절"}>
@@ -149,6 +151,20 @@ function Career({ handleScroll, scrollToComp }) {
         직접 만들어 사용할 수 있다면 편하지 않을까 하는 생각을 했습니다. 이것이
         제가 <ColorStrong color={"green"}>처음 개발자에 대한 관심</ColorStrong>
         을 갖게된 계기입니다.
+      </CareerBody>
+      <Element name={"university"}>
+        <Box className={"career-body-title"} color={"skyblue"}>
+          숭실대학교
+        </Box>
+      </Element>
+      <CareerBody content={"한 가지 결과를 위한 여러 가지 과정"}>
+        제가 수학을 좋아했던 이유는 한 가지 정답을 도출하기 위한 여러 가지 과정
+        중 가장 효율적인 과정을 찾는 다는 점이였습니다. 또한, 여러 수식을
+        증명하는 과정에서 오류를 찾아내고 수정해 나아가는 과정이 개발과
+        비슷하다고 느꼈습니다. 가장 좋아했던 수학과 비슷한 점이 많은 개발에도 큰
+        흥미를 느꼈습니다. 수학을 학습하던 과정들을{" "}
+        <ColorStrong color={"skyblue"}>개발에 접목하여 꾸준히 발전</ColorStrong>
+        해 나아가겠습니다.
       </CareerBody>
     </>
   );

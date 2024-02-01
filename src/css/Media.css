@@ -122,6 +122,51 @@
         margin-left: -10%;
         margin-top: 250px;
     }
+    .career-header-box {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+    .career-header-box-placing {
+        height: 1px;
+    }
+    .career-header-box-content {
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+    .career-header-content {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 70px;
+        font-size: 0.8rem;
+        font-weight: bolder;
+        border: 1px solid;
+        text-align: center;
+        padding: 2%;
+    }
+    .career-body {
+        width: 90%;
+        margin-left: 6%;
+        margin-top: 15px;
+    }
+    .career-body-title {
+        font-size: 1.1rem;
+        font-weight: bolder;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 100px;
+    }
+    .career-body-content {
+        font-weight: bold;
+    }
+    .career-body-content-text {
+        border: 1px solid #9f9f9f;
+        color: #9f9f9f;
+        width: 100%;
+        padding: 3%;
+        margin-top: 10px;
+    }
 }
 
 /* 태블릿 */
@@ -252,6 +297,50 @@
         font-size: 1.8rem;
         margin-left: -3%;
         margin-top: 200px;
+    }
+    .career-header-box {
+        width: 85%;
+        margin-left: 12%;
+        margin-top: 50px;
+    }
+    .career-header-box-placing {
+        height: 1px;
+    }
+    .career-header-box-content {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+    .career-header-content {
+        width: 85%;
+        margin-left: 12%;
+        margin-top: 70px;
+        font-weight: bolder;
+        border: 1px solid;
+        text-align: center;
+        padding: 2%;
+    }
+    .career-body {
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 15px;
+    }
+    .career-body-title {
+        font-size: 1.3rem;
+        font-weight: bolder;
+        width: 85%;
+        margin-left: 12%;
+        margin-top: 200px;
+    }
+    .career-body-content {
+        font-weight: bold;
+    }
+    .career-body-content-text {
+        border: 1px solid #9f9f9f;
+        color: #9f9f9f;
+        width: 80%;
+        padding: 3%;
+        margin-top: 10px;
     }
 }
 
