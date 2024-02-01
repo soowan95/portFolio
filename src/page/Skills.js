@@ -236,7 +236,7 @@ function Skills({ handleScroll }) {
           </SimpleGrid>
         </Box>
       </Box>
-      <Box className={"modile-skills"}>
+      <Box className={"mobile-skills"}>
         <motion.div
           ref={ref}
           initial={{ opacity: 0, x: "5%" }}
@@ -266,106 +266,106 @@ function Skills({ handleScroll }) {
           <strong>jdk 17 api document</strong>와 <strong>chat gpt</strong>를
           적극 활용해 문제를 해결했습니다.
         </Box>
-      </Box>
-      <Box className={"skills-body-progress"}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className={"skills-block"}
-        >
-          <Box className={"skills-block-title"} color={"#0073bc"}>
-            JAVA
-          </Box>
-          <Progress color={"#0073bc"} progress={"60%"} />
-          <Box className={"skills-block-content"}>
-            앞으로 출시할 jdk lts 버전과의 원활한 마이그레이션과 jdk 8 이후
-            추가된 기능들을 사용하고자 jdk 17을 사용했고 코딩테스트로 java에
-            익숙해졌습니다.
-          </Box>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className={"skills-block"}
-        >
-          <Box className={"skills-block-title"} color={"#69bc4d"}>
-            SPRING BOOT
-          </Box>
-          <Progress color={"#69bc4d"} progress={"50%"} />
-          <Box className={"skills-block-content"}>
-            spring을 사용하기 위해 was를 설정해야 하지만 학습해야 할 양이
-            방대하기에 spring boot를 사용했습니다. jdk 17 이후 버전과 호환되는
-            3.x 버전을 사용했습니다. spring에 대한 학습을 꾸준히 진행할
-            예정입니다.
-          </Box>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className={"skills-block"}
-        >
-          <Box className={"skills-block-title"} color={"#f0db4e"}>
-            JAVASCRIPT
-          </Box>
-          <Progress color={"#f0db4e"} progress={"30%"} />
-          <Box className={"skills-block-content"}>
-            백엔드 개발자가 되기 위해 java에 더 많은 투자를 했지만 node.js를
-            통해 서버의 개발도 가능하다는 것을 인지하고 있어 추후 더 학습할
-            예정입니다.
-          </Box>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className={"skills-block"}
-        >
-          <Box className={"skills-block-title"} color={"#00d8fe"}>
-            REACT
-          </Box>
-          <Progress color={"#00d8fe"} progress={"40%"} />
-          <Box className={"skills-block-content"}>
-            spa 프레임워크인 react는 초기 구동 속도는 느리지만 프로젝트의
-            복잡도를 줄이고 부드러운 사이트를 만들기 위해 프로젝트에
-            채택했습니다. 여러 라이브러리를 사용하기 쉽게 관리해주는 npm을
-            활용했습니다.
-          </Box>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className={"skills-block"}
-        >
-          <Box className={"skills-block-title"} color={"#f05030"}>
-            GIT
-          </Box>
-          <Progress color={"#f05030"} progress={"35%"} />
-          <Box className={"skills-block-content"}>
-            프로젝트의 형상 관리를 위해 git을 사용했습니다. github을 활용하여
-            협업을 진행하였습니다. 팀 프로젝트를 진행하면서 github내의 기능을
-            온전히 활용하지 못 했지만 추후에는 적극 활용할 예정입니다.
-          </Box>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className={"skills-block"}
-        >
-          <Box className={"skills-block-title"} color={"#f68e09"}>
-            AWS
-          </Box>
-          <Progress color={"#f68e09"} progress={"20%"} />
-          <Box className={"skills-block-content"}>
-            aws의 ec2를 이용해 프로젝트 배포 중에 있습니다. 프로젝트에는
-            rds(mariadb), s3를 이용했습니다. aws의 방대한 기능과 설정을 이해하고
-            사용하기 위해 꾸준히 학습하겠습니다.
-          </Box>
-        </motion.div>
+        <Box className={"skills-body-progress"}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={"skills-block"}
+          >
+            <Box className={"skills-block-title"} color={"#0073bc"}>
+              JAVA
+            </Box>
+            <Progress color={"#0073bc"} progress={"60%"} />
+            <Box className={"skills-block-content"}>
+              앞으로 출시할 jdk lts 버전과의 원활한 마이그레이션과 jdk 8 이후
+              추가된 기능들을 사용하고자 jdk 17을 사용했고 코딩테스트로 java에
+              익숙해졌습니다.
+            </Box>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={"skills-block"}
+          >
+            <Box className={"skills-block-title"} color={"#69bc4d"}>
+              SPRING BOOT
+            </Box>
+            <Progress color={"#69bc4d"} progress={"50%"} />
+            <Box className={"skills-block-content"}>
+              spring을 사용하기 위해 was를 설정해야 하지만 학습해야 할 양이
+              방대하기에 spring boot를 사용했습니다. jdk 17 이후 버전과 호환되는
+              3.x 버전을 사용했습니다. spring에 대한 학습을 꾸준히 진행할
+              예정입니다.
+            </Box>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={"skills-block"}
+          >
+            <Box className={"skills-block-title"} color={"#f0db4e"}>
+              JAVASCRIPT
+            </Box>
+            <Progress color={"#f0db4e"} progress={"30%"} />
+            <Box className={"skills-block-content"}>
+              백엔드 개발자가 되기 위해 java에 더 많은 투자를 했지만 node.js를
+              통해 서버의 개발도 가능하다는 것을 인지하고 있어 추후 더 학습할
+              예정입니다.
+            </Box>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={"skills-block"}
+          >
+            <Box className={"skills-block-title"} color={"#00d8fe"}>
+              REACT
+            </Box>
+            <Progress color={"#00d8fe"} progress={"40%"} />
+            <Box className={"skills-block-content"}>
+              spa 프레임워크인 react는 초기 구동 속도는 느리지만 프로젝트의
+              복잡도를 줄이고 부드러운 사이트를 만들기 위해 프로젝트에
+              채택했습니다. 여러 라이브러리를 사용하기 쉽게 관리해주는 npm을
+              활용했습니다.
+            </Box>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={"skills-block"}
+          >
+            <Box className={"skills-block-title"} color={"#f05030"}>
+              GIT
+            </Box>
+            <Progress color={"#f05030"} progress={"35%"} />
+            <Box className={"skills-block-content"}>
+              프로젝트의 형상 관리를 위해 git을 사용했습니다. github을 활용하여
+              협업을 진행하였습니다. 팀 프로젝트를 진행하면서 github내의 기능을
+              온전히 활용하지 못 했지만 추후에는 적극 활용할 예정입니다.
+            </Box>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={"skills-block"}
+          >
+            <Box className={"skills-block-title"} color={"#f68e09"}>
+              AWS
+            </Box>
+            <Progress color={"#f68e09"} progress={"20%"} />
+            <Box className={"skills-block-content"}>
+              aws의 ec2를 이용해 프로젝트 배포 중에 있습니다. 프로젝트에는
+              rds(mariadb), s3를 이용했습니다. aws의 방대한 기능과 설정을
+              이해하고 사용하기 위해 꾸준히 학습하겠습니다.
+            </Box>
+          </motion.div>
+        </Box>
       </Box>
     </>
   );
