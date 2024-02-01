@@ -7,6 +7,7 @@ import DesktopTabletNavBar from "../util/DesktopTabletNavBar";
 import "../css/Media.css";
 import MobileNavBar from "../util/MobileNavBar";
 import Skills from "./Skills";
+import Career from "./Career";
 
 function Home() {
   const [comp, setComp] = useState("info");
@@ -45,6 +46,9 @@ function Home() {
         </Element>
         <Element name={"skills"}>
           <Skills handleScroll={handleScroll} />
+        </Element>
+        <Element name={"career"}>
+          <Career handleScroll={handleScroll} />
         </Element>
         <Box h={"5vh"}></Box>
       </Box>

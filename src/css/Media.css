@@ -116,6 +116,12 @@
         font-size: 0.7rem;
         margin-top: 15px;
     }
+    .career-header {
+        width: 90%;
+        font-size: 1.2rem;
+        margin-left: -10%;
+        margin-top: 250px;
+    }
 }
 
 /* 태블릿 */
@@ -241,6 +247,11 @@
     .skills-block-content {
         font-size: 0.7rem;
         margin-top: 15px;
+    }
+    .career-header {
+        font-size: 1.8rem;
+        margin-left: -3%;
+        margin-top: 200px;
     }
 }
 
@@ -380,5 +391,24 @@
     .skills-block-content {
         font-size: 0.9rem;
         margin-top: 30px;
+    }
+    .career-header {
+        width: 95%;
+        margin-left: -10%;
+        font-size: 2.5rem;
+        margin-top: 200px;
+    }
+    .career-header-box {
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .career-header-box-placing {
+        height: 1px;
+    }
+    .career-header-box-content {
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px
     }
 }
