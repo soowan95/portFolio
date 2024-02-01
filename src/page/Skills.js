@@ -312,10 +312,8 @@ function Skills({ handleScroll }) {
           </Box>
           <Progress color={"#f0db4e"} progress={"30%"} />
           <Box className={"skills-block-content"}>
-            학원 교육과정 중 처음으로 학습한 언어가 javascript입니다. 비교적
-            학습 장벽이 낮고 다양한 프레임워크와 호환되는 언어입니다. 백엔드
-            개발자가 되기 위해 java에 더 많은 투자를 했지만 node.js를 통해
-            서버의 개발도 가능하다는 것을 인지하고 있어 추후 더 학습할
+            백엔드 개발자가 되기 위해 java에 더 많은 투자를 했지만 node.js를
+            통해 서버의 개발도 가능하다는 것을 인지하고 있어 추후 더 학습할
             예정입니다.
           </Box>
         </motion.div>
@@ -347,10 +345,9 @@ function Skills({ handleScroll }) {
           </Box>
           <Progress color={"#f05030"} progress={"35%"} />
           <Box className={"skills-block-content"}>
-            프로젝트의 형상 관리를 위해 git을 사용했습니다. git을 기반으로
-            코드를 관리해 주는 github을 활용하여 협업을 진행하였습니다. 팀
-            프로젝트를 진행하면서 github내의 기능을 온전히 활용하지 못 했던
-            아쉬움이 있어 추후에는 적극 활용할 예정입니다.
+            프로젝트의 형상 관리를 위해 git을 사용했습니다. github을 활용하여
+            협업을 진행하였습니다. 팀 프로젝트를 진행하면서 github내의 기능을
+            온전히 활용하지 못 했지만 추후에는 적극 활용할 예정입니다.
           </Box>
         </motion.div>
         <motion.div
