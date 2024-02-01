@@ -10,7 +10,7 @@ function CareerContent({ duration, content, scrollToComp, comp }) {
       className={"career-header-box-content"}
     >
       <Flex>
-        <Box w={"200px"}>- {duration}</Box>
+        <Box className={"career-header-box-duration"}>- {duration}</Box>
         <motion.div
           whileHover={{ y: -10, cursor: "pointer" }}
           transition={{ duration: 1 }}

@@ -136,6 +136,9 @@
         margin-bottom: 10px;
         font-size: 0.7rem;
     }
+    .career-header-box-duration {
+        width: 100px;
+    }
     .career-header-content {
         width: 90%;
         margin-left: 5%;
@@ -311,6 +314,9 @@
         margin-left: 20px;
         margin-top: 20px;
         margin-bottom: 20px
+    }
+    .career-header-box-duration {
+        width: 200px;
     }
     .career-header-content {
         width: 85%;
@@ -500,6 +506,9 @@
         margin-left: 20px;
         margin-top: 30px;
         margin-bottom: 30px
+    }
+    .career-header-box-duration {
+        width: 200px;
     }
     .career-header-content {
         width: 75%;
