@@ -17,10 +17,11 @@ function DesktopTabletNavBar({ scrollToComp }) {
         mt={"-20px"}
         fontFamily={"serif"}
         fontWeight={"bolder"}
+        color={"black"}
       >
         김수완
       </Box>
-      <Box textAlign={"center"} className={"nav-bar-info"}>
+      <Box textAlign={"center"} className={"nav-bar-info"} color={"black"}>
         Back end developer
       </Box>
       <NavButton comp={"info"} text={"home"} scrollToComp={scrollToComp} />

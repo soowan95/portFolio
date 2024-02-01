@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import "../css/Media.css";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
