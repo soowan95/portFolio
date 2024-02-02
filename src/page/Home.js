@@ -64,7 +64,7 @@ function Home() {
           </Box>
         </Flex>
       )}
-      {location.pathname === "/portfolio/prj/crello" && <Crello />}
+      {location.pathname === "/portfolio/crello" && <Crello />}
     </>
   );
 }
