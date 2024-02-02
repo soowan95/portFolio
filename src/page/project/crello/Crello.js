@@ -5,8 +5,10 @@ import CrelloInfo from "./CrelloInfo";
 import CrelloFlow from "./CrelloFlow";
 import CrelloPlan from "./CrelloPlan";
 import CrelloCheck from "./CrelloCheck";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
-function Crello() {
+function Crello({ setPageName }) {
   const [nowShow, setNowShow] = useState("skill");
 
   return (
@@ -18,6 +20,13 @@ function Crello() {
         {nowShow === "plan" && <CrelloPlan />}
         {nowShow === "check" && <CrelloCheck />}
         <Breadcrumb separator="-" className={"project-detail-nav"}>
+          <BreadcrumbItem>
+            <Tooltip label={"홈으로"} placement={"top"}>
+              <Box onClick={() => setPageName("home")} cursor={"pointer"}>
+                🔴
+              </Box>
+            </Tooltip>
+          </BreadcrumbItem>
           <BreadcrumbItem>
             <Tooltip label={"기술 스택"} placement={"top"}>
               <Box onClick={() => setNowShow("skill")} cursor={"pointer"}>
@@ -56,6 +65,15 @@ function Crello() {
         </Breadcrumb>
       </Box>
       <Box className={"project-detail mobile-project-detail"}>
+        <Box
+          position={"fixed"}
+          top={"3%"}
+          right={"6%"}
+          zIndex={2}
+          onClick={() => setPageName("home")}
+        >
+          <FontAwesomeIcon icon={faHouse} />
+        </Box>
         <CrelloSkill />
         <CrelloInfo />
         <CrelloFlow />

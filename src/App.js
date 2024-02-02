@@ -8,11 +8,7 @@ import Home from "./page/Home";
 import Crello from "./page/project/crello/Crello";
 
 const routes = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/portfolio" element={<Home />} exact>
-      <Route path="crello" element={<Crello />} />
-    </Route>,
-  ),
+  createRoutesFromElements(<Route path="/portfolio" element={<Home />} />),
 );
 
 function App() {

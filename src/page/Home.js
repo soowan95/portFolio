@@ -14,6 +14,7 @@ import Crello from "./project/crello/Crello";
 
 function Home() {
   const [comp, setComp] = useState("info");
+  const [pageName, setPageName] = useState("home");
 
   const location = useLocation();
 
@@ -36,8 +37,7 @@ function Home() {
 
   return (
     <>
-      {(location.pathname === "/portfolio" ||
-        location.pathname === "/portfolio/") && (
+      {pageName === "home" && (
         <Flex>
           <Box className={"mobile-nav-bar"}>
             <MobileNavBar scrollToComp={scrollToComp} />
@@ -59,13 +59,13 @@ function Home() {
               <Career handleScroll={handleScroll} scrollToComp={scrollToComp} />
             </Element>
             <Element name={"project"}>
-              <Project handleScroll={handleScroll} />
+              <Project handleScroll={handleScroll} setPageName={setPageName} />
             </Element>
             <Box h={"5vh"}></Box>
           </Box>
         </Flex>
       )}
-      {location.pathname === "/portfolio/crello" && <Crello />}
+      {pageName === "crello" && <Crello setPageName={setPageName} />}
     </>
   );
 }

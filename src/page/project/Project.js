@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import ColorStrong from "../../util/csscomp/ColorStrong";
 
-function Project({ handleScroll }) {
+function Project({ handleScroll, setPageName }) {
   const [dref, dinView] = useInView();
   const [tref, tinView] = useInView();
   const [mref, minView] = useInView();
@@ -14,7 +14,7 @@ function Project({ handleScroll }) {
   }, [dinView, tinView, minView]);
 
   const handleButton = (path) => {
-    window.open(`/portfolio/${path}`, "_blank");
+    setPageName(path);
   };
 
   return (
