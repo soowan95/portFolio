@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { Box, Flex } from "@chakra-ui/react";
 
-function CareerContent({ duration, content, scrollToComp, comp }) {
+function CareerContent({
+  duration,
+  content,
+  scrollToComp,
+  comp,
+  scrollToCenter,
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 50, y: -20 }}
@@ -14,7 +20,10 @@ function CareerContent({ duration, content, scrollToComp, comp }) {
         <motion.div
           whileHover={{ y: -10, cursor: "pointer" }}
           transition={{ duration: 1 }}
-          onClick={() => scrollToComp(comp)}
+          onClick={() => {
+            if (comp) scrollToComp(comp);
+            else scrollToCenter();
+          }}
         >
           {content}
         </motion.div>

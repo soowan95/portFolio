@@ -1,18 +1,56 @@
 import { Box, Divider } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import CareerContent from "../util/career/CareerContent";
 import CareerBody from "../util/career/CareerBody";
-import { Element } from "react-scroll";
 import ColorStrong from "../util/csscomp/ColorStrong";
 
 function Career({ handleScroll, scrollToComp }) {
-  let [ref, inView] = useInView();
+  const gymRef = useRef();
+  const armyRef = useRef();
+  const uniRef = useRef();
+  const highRef = useRef();
+
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) handleScroll("career");
   }, [inView]);
+
+  const scrollToCenter = (ref) => {
+    if (ref.current) {
+      const elem = ref.current;
+      const elemRect = elem.getBoundingClientRect();
+      const tartgetY =
+        elemRect.top +
+        window.scrollY -
+        window.innerHeight / 2 +
+        elemRect.height / 2;
+
+      const duration = 1000;
+      const startTime = performance.now();
+      const startScrollY = window.scrollY;
+
+      const animateScroll = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeInOutCubic = (t) =>
+          t < 0.5 ? 4 * t ** 3 : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+
+        window.scrollTo(
+          0,
+          startScrollY + (tartgetY - startScrollY) * easeInOutCubic(progress),
+        );
+
+        if (progress < 1) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+
+      requestAnimationFrame(animateScroll);
+    }
+  };
 
   return (
     <>
@@ -54,8 +92,7 @@ function Career({ handleScroll, scrollToComp }) {
         <CareerContent
           content={"파운드짐(헬스 트레이너)"}
           duration={"2021.09 ~ 2023.04"}
-          scrollToComp={scrollToComp}
-          comp={"gym"}
+          scrollToCenter={() => scrollToCenter(gymRef)}
         />
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -67,8 +104,7 @@ function Career({ handleScroll, scrollToComp }) {
         <CareerContent
           content={"7공수특전여단(정작장교)"}
           duration={"2018.06 ~ 2020.06"}
-          scrollToComp={scrollToComp}
-          comp={"army"}
+          scrollToCenter={() => scrollToCenter(armyRef)}
         />
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -80,8 +116,7 @@ function Career({ handleScroll, scrollToComp }) {
         <CareerContent
           content={"숭실대학교(수학과)"}
           duration={"2014.03 ~ 2018.02"}
-          scrollToComp={scrollToComp}
-          comp={"university"}
+          scrollToCenter={() => scrollToCenter(uniRef)}
         />
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -93,8 +128,7 @@ function Career({ handleScroll, scrollToComp }) {
         <CareerContent
           content={"충암고등학교"}
           duration={"2011.03 ~ 2014.02"}
-          scrollToComp={scrollToComp}
-          comp={"highschool"}
+          scrollToCenter={() => scrollToCenter(highRef)}
         />
         <Box className={"career-header-box-placing"} />
       </Box>
@@ -106,11 +140,9 @@ function Career({ handleScroll, scrollToComp }) {
       >
         저의 여러 경험을 통해 가능성을 바라봐주시면 감사하겠습니다.
       </motion.div>
-      <Element name={"gym"}>
-        <Box className={"career-body-title"} color={"purple"}>
-          파운드짐
-        </Box>
-      </Element>
+      <Box className={"career-body-title"} color={"purple"} ref={gymRef}>
+        파운드짐
+      </Box>
       <CareerBody content={"기존의 센터와 달리 팀으로 운영"}>
         다른 센터들은 개인의 성과에 따라 월급이 주어집니다. 그러나 파운드짐은
         3명이 한팀으로 구성되어 개인의 성과와{" "}
@@ -130,11 +162,9 @@ function Career({ handleScroll, scrollToComp }) {
         구현했고 <ColorStrong color={"purple"}>개발자에 대한 꿈</ColorStrong>을
         키워갔습니다.
       </CareerBody>
-      <Element name={"army"}>
-        <Box className={"career-body-title"} color={"green"}>
-          7공수특전여단
-        </Box>
-      </Element>
+      <Box className={"career-body-title"} color={"green"} ref={armyRef}>
+        7공수특전여단
+      </Box>
       <CareerBody content={"지역대 인원 보고의 자동화를 꿈꾼 정작장교 시절"}>
         매일 아침 지역대 전체 인원을 파악해 보고하는 임무가 있었습니다. 선임
         정작장교들은 한글 파일을 사용해 매일 하나하나 수정해 가며
@@ -156,11 +186,9 @@ function Career({ handleScroll, scrollToComp }) {
         <ColorStrong color={"green"}>함께 한계를 극복하는 팀원</ColorStrong>들을
         보며 이겨낼 수 있었습니다.
       </CareerBody>
-      <Element name={"university"}>
-        <Box className={"career-body-title"} color={"#089bcc"}>
-          숭실대학교
-        </Box>
-      </Element>
+      <Box className={"career-body-title"} color={"#089bcc"} ref={uniRef}>
+        숭실대학교
+      </Box>
       <CareerBody content={"한 가지 결과를 위한 여러 가지 과정"}>
         제가 수학을 좋아했던 이유는 한 가지 정답을 도출하기 위한{" "}
         <ColorStrong color={"#089bcc"}>
@@ -173,11 +201,9 @@ function Career({ handleScroll, scrollToComp }) {
         <ColorStrong color={"#089bcc"}>개발에 접목하여 꾸준히 발전</ColorStrong>
         해 나아가겠습니다.
       </CareerBody>
-      <Element name={"highschool"}>
-        <Box className={"career-body-title"} color={"#f7c909"}>
-          충암고등학교
-        </Box>
-      </Element>
+      <Box className={"career-body-title"} color={"#f7c909"} ref={highRef}>
+        충암고등학교
+      </Box>
       <CareerBody content={"꿈을 위한 노력"}>
         저는 어려서부터 제가 가진{" "}
         <ColorStrong color={"#f7c909"}>
