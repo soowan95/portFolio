@@ -22,6 +22,10 @@ function Home() {
     sessionStorage.setItem("comp", "info");
   }, []);
 
+  useEffect(() => {
+    scrollToComp("project");
+  }, [pageName]);
+
   const scrollToComp = (comp) => {
     scroller.scrollTo(comp, {
       duration: 1000,
