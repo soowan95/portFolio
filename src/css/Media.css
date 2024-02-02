@@ -172,6 +172,51 @@
         padding: 3%;
         margin-top: 10px;
     }
+    .desktop-project {
+        display: none;
+    }
+    .tablet-project {
+        display: none;
+    }
+    .mobile-project {
+        border: 1px solid rgba(0,0,0,0);
+    }
+    .project-header {
+        width: 90%;
+        font-size: 1.2rem;
+        margin-left: -10%;
+        margin-top: 250px;
+    }
+    .project-body-title {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30px;
+        font-size: 0.7rem;
+    }
+    .project-body-projects {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 50px;
+    }
+    .project-body-cover {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .project-block {
+        height: 200px;
+        margin: 20px auto;
+        border: 1px solid rgba(0,0,0,0);
+    }
+    .project-block-content {
+        width: 94%;
+        height: 74%;
+        margin: 3%;
+        padding: 10% 2%;
+        border: 1px solid white;
+        color: #5e5e5e;
+        border-radius: 10px;
+        font-size: 0.7rem;
+    }
 }
 
 /* 태블릿 */
@@ -350,6 +395,45 @@
         width: 80%;
         padding: 3%;
         margin-top: 10px;
+    }
+    .desktop-project {
+        display: none;
+    }
+    .mobile-project {
+        display: none;
+    }
+    .project-header {
+        font-size: 1.8rem;
+        margin-left: -3%;
+        margin-top: 200px;
+    }
+    .project-body-title {
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 30px;
+        font-size: 0.9rem;
+    }
+    .project-body-projects {
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 50px;
+    }
+    .project-body-cover {
+        width: 85%;
+        margin-left: 15%;
+    }
+    .project-block {
+        height: 200px;
+    }
+    .project-block-content {
+        width: 94%;
+        height: 74%;
+        margin: 3%;
+        padding: 10% 2%;
+        border: 1px solid white;
+        color: #5e5e5e;
+        border-radius: 10px;
+        font-size: 0.7rem;
     }
 }
 
@@ -544,5 +628,45 @@
         width: 80%;
         padding: 3%;
         margin-top: 10px;
+    }
+    .tablet-project {
+        display: none;
+    }
+    .mobile-project {
+        display: none;
+    }
+    .project-header {
+        width: 95%;
+        margin-left: -10%;
+        font-size: 2.5rem;
+        margin-top: 200px;
+    }
+    .project-body-title {
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 30px;
+        font-size: 1.1rem;
+    }
+    .project-body-projects {
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+    .project-body-cover {
+        width: 75%;
+        margin-left: 5%;
+    }
+    .project-block {
+        height: 250px;
+    }
+    .project-block-content {
+        width: 94%;
+        height: 74%;
+        margin: 3%;
+        padding: 10% 2%;
+        border: 1px solid white;
+        color: #5e5e5e;
+        border-radius: 10px;
+        font-size: 0.9rem;
     }
 }

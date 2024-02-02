@@ -8,6 +8,7 @@ import "../css/Media.css";
 import MobileNavBar from "../util/MobileNavBar";
 import Skills from "./Skills";
 import Career from "./Career";
+import Project from "./project/Project";
 
 function Home() {
   const [comp, setComp] = useState("info");
@@ -49,6 +50,9 @@ function Home() {
         </Element>
         <Element name={"career"}>
           <Career handleScroll={handleScroll} scrollToComp={scrollToComp} />
+        </Element>
+        <Element name={"project"}>
+          <Project handleScroll={handleScroll} />
         </Element>
         <Box h={"5vh"}></Box>
       </Box>
