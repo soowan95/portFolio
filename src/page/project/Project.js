@@ -91,10 +91,14 @@ function Project({ handleScroll }) {
             >
               <Box className={"project-block-content"}>
                 현재 운영 중인 웹사이트 trello에 대한{" "}
-                <ColorStrong color={"rgb(26,32,44)"}>clone coding</ColorStrong>
+                <ColorStrong color={"rgb(117,169,191)"}>
+                  clone coding
+                </ColorStrong>
                 을 진행했습니다. Trello의 여러 기능 중 가장 기본이라 생각하는
                 todo list 기능을 구현했습니다. 팀원들의 조기취업으로{" "}
-                <ColorStrong color={"rgb(26,32,44)"}>1인 프로젝트</ColorStrong>
+                <ColorStrong color={"rgb(117,169,191)"}>
+                  1인 프로젝트
+                </ColorStrong>
                 로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를
                 완성했습니다.
               </Box>
@@ -201,10 +205,14 @@ function Project({ handleScroll }) {
             >
               <Box className={"project-block-content"}>
                 현재 운영 중인 웹사이트 trello에 대한{" "}
-                <ColorStrong color={"rgb(26,32,44)"}>clone coding</ColorStrong>
+                <ColorStrong color={"rgb(117,169,191)"}>
+                  clone coding
+                </ColorStrong>
                 을 진행했습니다. Trello의 여러 기능 중 가장 기본이라 생각하는
                 todo list 기능을 구현했습니다. 팀원들의 조기취업으로{" "}
-                <ColorStrong color={"rgb(26,32,44)"}>1인 프로젝트</ColorStrong>
+                <ColorStrong color={"rgb(117,169,191)"}>
+                  1인 프로젝트
+                </ColorStrong>
                 로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를
                 완성했습니다.
               </Box>
@@ -308,11 +316,11 @@ function Project({ handleScroll }) {
           >
             <Box className={"project-block-content"}>
               현재 운영 중인 웹사이트 trello에 대한{" "}
-              <ColorStrong color={"rgb(26,32,44)"}>clone coding</ColorStrong>을
-              진행했습니다. Trello의 여러 기능 중 가장 기본이라 생각하는 todo
+              <ColorStrong color={"rgb(117,169,191)"}>clone coding</ColorStrong>
+              을 진행했습니다. Trello의 여러 기능 중 가장 기본이라 생각하는 todo
               list 기능을 구현했습니다. 팀원들의 조기취업으로{" "}
-              <ColorStrong color={"rgb(26,32,44)"}>1인 프로젝트</ColorStrong>로
-              진행했지만 초기 기획에서 벗어나지 않고 프로젝트를 완성했습니다.
+              <ColorStrong color={"rgb(117,169,191)"}>1인 프로젝트</ColorStrong>
+              로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를 완성했습니다.
             </Box>
             <Button ml={"75%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
               자세히
