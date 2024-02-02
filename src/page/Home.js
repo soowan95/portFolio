@@ -36,38 +36,35 @@ function Home() {
 
   return (
     <>
-      {location.pathname === "/portfolio" ||
-        (location.pathname === "/portfolio/" && (
-          <Flex>
-            <Box className={"mobile-nav-bar"}>
-              <MobileNavBar scrollToComp={scrollToComp} />
-            </Box>
-            <Box bg={"#e1e1e1"} className={"desktop-tablet-nav-bar"}>
-              <DesktopTabletNavBar scrollToComp={scrollToComp} />
-            </Box>
-            <Box className={"content"}>
-              <Element name={"info"}>
-                <Info handleScroll={handleScroll} />
-              </Element>
-              <Element name={"about"}>
-                <About handleScroll={handleScroll} />
-              </Element>
-              <Element name={"skills"}>
-                <Skills handleScroll={handleScroll} />
-              </Element>
-              <Element name={"career"}>
-                <Career
-                  handleScroll={handleScroll}
-                  scrollToComp={scrollToComp}
-                />
-              </Element>
-              <Element name={"project"}>
-                <Project handleScroll={handleScroll} />
-              </Element>
-              <Box h={"5vh"}></Box>
-            </Box>
-          </Flex>
-        ))}
+      {(location.pathname === "/portfolio" ||
+        location.pathname === "/portfolio/") && (
+        <Flex>
+          <Box className={"mobile-nav-bar"}>
+            <MobileNavBar scrollToComp={scrollToComp} />
+          </Box>
+          <Box bg={"#e1e1e1"} className={"desktop-tablet-nav-bar"}>
+            <DesktopTabletNavBar scrollToComp={scrollToComp} />
+          </Box>
+          <Box className={"content"}>
+            <Element name={"info"}>
+              <Info handleScroll={handleScroll} />
+            </Element>
+            <Element name={"about"}>
+              <About handleScroll={handleScroll} />
+            </Element>
+            <Element name={"skills"}>
+              <Skills handleScroll={handleScroll} />
+            </Element>
+            <Element name={"career"}>
+              <Career handleScroll={handleScroll} scrollToComp={scrollToComp} />
+            </Element>
+            <Element name={"project"}>
+              <Project handleScroll={handleScroll} />
+            </Element>
+            <Box h={"5vh"}></Box>
+          </Box>
+        </Flex>
+      )}
       {location.pathname === "/portfolio/crello" && <Crello />}
     </>
   );
