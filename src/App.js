@@ -9,9 +9,8 @@ import Crello from "./page/project/crello/Crello";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
-      <Route path="/portfolio" element={<Home />} />
-      <Route path="/prj/crello" element={<Crello />} />
+    <Route path="/portfolio" element={<Home />} exact>
+      <Route path="crello" element={<Crello />} />
     </Route>,
   ),
 );

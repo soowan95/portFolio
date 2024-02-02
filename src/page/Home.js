@@ -9,9 +9,13 @@ import MobileNavBar from "../util/MobileNavBar";
 import Skills from "./Skills";
 import Career from "./Career";
 import Project from "./project/Project";
+import { useLocation } from "react-router-dom";
+import Crello from "./project/crello/Crello";
 
 function Home() {
   const [comp, setComp] = useState("info");
+
+  const location = useLocation();
 
   useEffect(() => {
     sessionStorage.setItem("comp", "info");
@@ -31,32 +35,37 @@ function Home() {
   };
 
   return (
-    <Flex>
-      <Box className={"mobile-nav-bar"}>
-        <MobileNavBar scrollToComp={scrollToComp} />
-      </Box>
-      <Box bg={"#e1e1e1"} className={"desktop-tablet-nav-bar"}>
-        <DesktopTabletNavBar scrollToComp={scrollToComp} />
-      </Box>
-      <Box className={"content"}>
-        <Element name={"info"}>
-          <Info handleScroll={handleScroll} />
-        </Element>
-        <Element name={"about"}>
-          <About handleScroll={handleScroll} />
-        </Element>
-        <Element name={"skills"}>
-          <Skills handleScroll={handleScroll} />
-        </Element>
-        <Element name={"career"}>
-          <Career handleScroll={handleScroll} scrollToComp={scrollToComp} />
-        </Element>
-        <Element name={"project"}>
-          <Project handleScroll={handleScroll} />
-        </Element>
-        <Box h={"5vh"}></Box>
-      </Box>
-    </Flex>
+    <>
+      {location.pathname === "/portfolio" && (
+        <Flex>
+          <Box className={"mobile-nav-bar"}>
+            <MobileNavBar scrollToComp={scrollToComp} />
+          </Box>
+          <Box bg={"#e1e1e1"} className={"desktop-tablet-nav-bar"}>
+            <DesktopTabletNavBar scrollToComp={scrollToComp} />
+          </Box>
+          <Box className={"content"}>
+            <Element name={"info"}>
+              <Info handleScroll={handleScroll} />
+            </Element>
+            <Element name={"about"}>
+              <About handleScroll={handleScroll} />
+            </Element>
+            <Element name={"skills"}>
+              <Skills handleScroll={handleScroll} />
+            </Element>
+            <Element name={"career"}>
+              <Career handleScroll={handleScroll} scrollToComp={scrollToComp} />
+            </Element>
+            <Element name={"project"}>
+              <Project handleScroll={handleScroll} />
+            </Element>
+            <Box h={"5vh"}></Box>
+          </Box>
+        </Flex>
+      )}
+      {location.pathname === "/portfolio/prj/crello" && <Crello />}
+    </>
   );
 }
 

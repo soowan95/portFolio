@@ -14,7 +14,7 @@ function Project({ handleScroll }) {
   }, [dinView, tinView, minView]);
 
   const handleButton = (path) => {
-    window.open(`/prj/${path}`, "_blank");
+    window.open(`/portfolio/${path}`, "_blank");
   };
 
   return (
@@ -226,7 +226,13 @@ function Project({ handleScroll }) {
                 로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를
                 완성했습니다.
               </Box>
-              <Button ml={"70%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
+              <Button
+                ml={"70%"}
+                mb={"3%"}
+                size={"xs"}
+                colorScheme={"blue"}
+                onClick={() => handleButton("crello")}
+              >
                 자세히
               </Button>
             </motion.div>
@@ -332,7 +338,13 @@ function Project({ handleScroll }) {
               <ColorStrong color={"rgb(117,169,191)"}>1인 프로젝트</ColorStrong>
               로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를 완성했습니다.
             </Box>
-            <Button ml={"75%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
+            <Button
+              ml={"75%"}
+              mb={"3%"}
+              size={"xs"}
+              colorScheme={"blue"}
+              onClick={() => handleButton("crello")}
+            >
               자세히
             </Button>
           </motion.div>
