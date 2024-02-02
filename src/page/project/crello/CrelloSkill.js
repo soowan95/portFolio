@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, SimpleGrid } from "@chakra-ui/react";
 
 function CrelloSkill() {
   return (
@@ -238,14 +238,18 @@ function CrelloSkill() {
         >
           Back End
         </motion.div>
-        <Flex className={"project-detail-skill-box"}>
+        <SimpleGrid
+          columns={2}
+          spacing={5}
+          className={"project-detail-skill-box"}
+        >
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className={"project-detail-skill"}
           >
-            JDK 17,
+            JDK 17
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -253,7 +257,7 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 0.7 }}
             className={"project-detail-skill"}
           >
-            Spring Boot 3.1.7,
+            Spring Boot 3.1.7
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -261,7 +265,7 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 1 }}
             className={"project-detail-skill"}
           >
-            Spring Security 6,
+            Spring Security 6
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -271,7 +275,7 @@ function CrelloSkill() {
           >
             Spring Data JPA 5
           </motion.div>
-        </Flex>
+        </SimpleGrid>
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -280,14 +284,18 @@ function CrelloSkill() {
         >
           Front End
         </motion.div>
-        <Flex className={"project-detail-skill-box"}>
+        <SimpleGrid
+          columns={2}
+          spacing={10}
+          className={"project-detail-skill-box"}
+        >
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className={"project-detail-skill"}
           >
-            React,
+            React
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -297,7 +305,7 @@ function CrelloSkill() {
           >
             npm
           </motion.div>
-        </Flex>
+        </SimpleGrid>
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -306,7 +314,11 @@ function CrelloSkill() {
         >
           Database
         </motion.div>
-        <Flex className={"project-detail-skill-box"}>
+        <SimpleGrid
+          columns={2}
+          spacing={10}
+          className={"project-detail-skill-box"}
+        >
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -315,7 +327,7 @@ function CrelloSkill() {
           >
             Mariadb
           </motion.div>
-        </Flex>
+        </SimpleGrid>
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -324,14 +336,18 @@ function CrelloSkill() {
         >
           Server / Deployment
         </motion.div>
-        <Flex className={"project-detail-skill-box"}>
+        <SimpleGrid
+          columns={2}
+          spacing={10}
+          className={"project-detail-skill-box"}
+        >
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className={"project-detail-skill"}
           >
-            Tomcat,
+            Tomcat
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -339,7 +355,7 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 0.7 }}
             className={"project-detail-skill"}
           >
-            Nginx,
+            Nginx
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -347,7 +363,7 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 1 }}
             className={"project-detail-skill"}
           >
-            AWS EC2,
+            AWS EC2
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -355,7 +371,7 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 1.2 }}
             className={"project-detail-skill"}
           >
-            AWS RDS,
+            AWS RDS
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -365,7 +381,7 @@ function CrelloSkill() {
           >
             AWS S3
           </motion.div>
-        </Flex>
+        </SimpleGrid>
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -374,14 +390,18 @@ function CrelloSkill() {
         >
           OS
         </motion.div>
-        <Flex className={"project-detail-skill-box"}>
+        <SimpleGrid
+          columns={2}
+          spacing={10}
+          className={"project-detail-skill-box"}
+        >
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className={"project-detail-skill"}
           >
-            Window,
+            Window
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -391,7 +411,7 @@ function CrelloSkill() {
           >
             Ubuntu
           </motion.div>
-        </Flex>
+        </SimpleGrid>
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -400,14 +420,18 @@ function CrelloSkill() {
         >
           Collaborations
         </motion.div>
-        <Flex className={"project-detail-skill-box"}>
+        <SimpleGrid
+          columns={2}
+          spacing={10}
+          className={"project-detail-skill-box"}
+        >
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className={"project-detail-skill"}
           >
-            Git,
+            Git
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -417,7 +441,7 @@ function CrelloSkill() {
           >
             Swagger-ui
           </motion.div>
-        </Flex>
+        </SimpleGrid>
       </Box>
     </>
   );

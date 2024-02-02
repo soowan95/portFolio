@@ -53,8 +53,8 @@ function CrelloFlow() {
           transition={{ duration: 1, ease: "easeInOut" }}
         />
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 10 }}
           transition={{ duration: 2 }}
         >
           <Image

@@ -343,7 +343,10 @@ function Project({ handleScroll, setPageName }) {
               mb={"3%"}
               size={"xs"}
               colorScheme={"blue"}
-              onClick={() => handleButton("crello")}
+              onClick={() => {
+                handleButton("crello");
+                window.scrollTo(0, 0);
+              }}
             >
               자세히
             </Button>
