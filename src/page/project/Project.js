@@ -207,7 +207,7 @@ function Project({ handleScroll }) {
                 로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를
                 완성했습니다.
               </Box>
-              <Button ml={"75%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
+              <Button ml={"70%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
                 자세히
               </Button>
             </motion.div>
@@ -227,7 +227,7 @@ function Project({ handleScroll }) {
                 하고 소통하는 sns의 느낌이 강한 사이트를 만들고 싶었습니다.
                 각자의 추억이 담긴 playlist를 공유하고 소통하는 relieve입니다.
               </Box>
-              <Button ml={"75%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
+              <Button ml={"70%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
                 자세히
               </Button>
             </motion.div>
@@ -313,7 +313,7 @@ function Project({ handleScroll }) {
               <ColorStrong color={"rgb(26,32,44)"}>1인 프로젝트</ColorStrong>로
               진행했지만 초기 기획에서 벗어나지 않고 프로젝트를 완성했습니다.
             </Box>
-            <Button ml={"80%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
+            <Button ml={"75%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
               자세히
             </Button>
           </motion.div>
@@ -333,7 +333,7 @@ function Project({ handleScroll }) {
               하고 소통하는 sns의 느낌이 강한 사이트를 만들고 싶었습니다. 각자의
               추억이 담긴 playlist를 공유하고 소통하는 relieve입니다.
             </Box>
-            <Button ml={"80%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
+            <Button ml={"75%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
               자세히
             </Button>
           </motion.div>
