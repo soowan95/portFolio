@@ -62,6 +62,7 @@ function About({ handleScroll }) {
         <Box
           fontWeight={"bolder"}
           bg={index === 1 && "rgba(0,0,0,0.1)"}
+          _hover={{ bg: "rgba(224,215,100,0.2)" }}
           className={"about-body-title"}
         >
           1️⃣ 저는 개인보다 팀을 중시하는 사람입니다. <br />
@@ -158,6 +159,7 @@ function About({ handleScroll }) {
         <Box
           fontWeight={"bolder"}
           bg={index === 2 && "rgba(0,0,0,0.1)"}
+          _hover={{ bg: "rgba(126,217,217,0.2)" }}
           className={"about-body-title"}
         >
           2️⃣ 저는 긍정적이고 책임감이 투철한 사람입니다. <br />
@@ -262,6 +264,7 @@ function About({ handleScroll }) {
         <Box
           fontWeight={"bolder"}
           bg={index === 3 && "rgba(0,0,0,0.1)"}
+          _hover={{ bg: "rgba(127,225,129,0.2)" }}
           className={"about-body-title"}
         >
           3️⃣ 입사 후에 더욱 발전하는 제가 되겠습니다. <br />

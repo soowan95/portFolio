@@ -498,9 +498,6 @@
         cursor: pointer;
         font-size: 1.8rem;
     }
-    .about-body-title:hover {
-        background: rgba(255, 255, 255, 0.05);
-    }
     .about-body-semi-title {
         font-size: 1rem;
         font-weight: 100;

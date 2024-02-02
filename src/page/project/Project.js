@@ -2,21 +2,22 @@ import { Box, Button, Image, SimpleGrid } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import Progress from "../../util/csscomp/Progress";
 import ColorStrong from "../../util/csscomp/ColorStrong";
 
 function Project({ handleScroll }) {
-  const [ref, inView] = useInView();
+  const [dref, dinView] = useInView();
+  const [tref, tinView] = useInView();
+  const [mref, minView] = useInView();
 
   useEffect(() => {
-    if (inView) handleScroll("project");
-  }, [inView]);
+    if (dinView || tref || mref) handleScroll("project");
+  }, [dinView, tinView, minView]);
 
   return (
     <>
       <Box position={"relative"} className={"desktop-project"}>
         <motion.div
-          ref={ref}
+          ref={dref}
           initial={{ opacity: 0, x: "5%" }}
           whileInView={{ opacity: 1, x: "15%" }}
           transition={{ duration: 1 }}
@@ -126,7 +127,7 @@ function Project({ handleScroll }) {
       </Box>
       <Box position={"relative"} className={"tablet-project"}>
         <motion.div
-          ref={ref}
+          ref={tref}
           initial={{ opacity: 0, x: "5%" }}
           whileInView={{ opacity: 1, x: "15%" }}
           transition={{ duration: 1 }}
@@ -236,7 +237,7 @@ function Project({ handleScroll }) {
       </Box>
       <Box position={"relative"} className={"mobile-project"}>
         <motion.div
-          ref={ref}
+          ref={mref}
           initial={{ opacity: 0, x: "5%" }}
           whileInView={{ opacity: 1, x: "15%" }}
           transition={{ duration: 1 }}
