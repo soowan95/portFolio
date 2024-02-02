@@ -217,6 +217,57 @@
         border-radius: 10px;
         font-size: 0.7rem;
     }
+    .desktop-tablet-project-detail {
+        display: none;
+    }
+    .project-detail {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .project-detail-title {
+        margin-left: 5%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+    .project-detail-subtitle {
+        margin-left: 5%;
+        margin-top: 30px;
+        font-weight: 600;
+    }
+    .project-detail-skill-box {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+    .project-detail-skill {
+        margin-left: 20px;
+    }
+    .project-detail-info-box {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+    .project-detail-info {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .project-detail-check-box {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+    .project-detail-check {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .project-detail-check-footer {
+        margin-left: 5%;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        font-size: 0.9rem;
+    }
 }
 
 /* 태블릿 */
@@ -435,15 +486,69 @@
         border-radius: 10px;
         font-size: 0.7rem;
     }
+    .mobile-project-detail {
+        display: none;
+    }
+    .project-detail {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .project-detail-title {
+        margin-left: 5%;
+        margin-top: 50px;
+        font-size: 1.8rem;
+        font-weight: bolder;
+    }
+    .project-detail-subtitle {
+        margin-left: 5%;
+        margin-top: 30px;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .project-detail-skill-box {
+        margin-left: 5%;
+        margin-top: 15px;
+    }
+    .project-detail-skill {
+        margin-left: 20px;
+    }
+    .project-detail-info-box {
+        margin-left: 5%;
+        margin-top: 15px;
+    }
+    .project-detail-info {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .project-detail-check-box {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 0.9rem;
+    }
+    .project-detail-check {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .project-detail-check-footer {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+    .project-detail-nav {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+    }
 }
 
 /* 테스크톱 */
 @media only screen and (min-width: 1025px) {
     .desktop-tablet-nav-bar {
-        width: 300px;
+        width: 16%;
         height: 100vh;
         position: fixed;
-        left: 400px;
+        left: 20%;
     }
     .mobile-nav-bar {
         display: none;
@@ -463,7 +568,7 @@
     .content {
         width: 60%;
         position: absolute;
-        left: 700px
+        left: 40%;
     }
     .info-header {
         width: 95%;
@@ -665,5 +770,61 @@
         color: #5e5e5e;
         border-radius: 10px;
         font-size: 0.9rem;
+    }
+    .mobile-project-detail {
+        display: none;
+    }
+    .project-detail {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .project-detail-title {
+        margin-left: 5%;
+        margin-top: 50px;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    .project-detail-subtitle {
+        margin-left: 5%;
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .project-detail-skill-box {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+    .project-detail-skill {
+        margin-left: 20px;
+    }
+    .project-detail-info-box {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+    .project-detail-info {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .project-detail-check-box {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+    .project-detail-check {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .project-detail-check-footer {
+        margin-left: 5%;
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+    .project-detail-nav {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
     }
 }
