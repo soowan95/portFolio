@@ -1,4 +1,11 @@
-import { Box, Button, Image, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Image,
+  SimpleGrid,
+  useToast,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -9,12 +16,18 @@ function Project({ handleScroll, setPageName }) {
   const [tref, tinView] = useInView();
   const [mref, minView] = useInView();
 
+  const toast = useToast();
+
   useEffect(() => {
     if (dinView || tref || mref) handleScroll("project");
   }, [dinView, tinView, minView]);
 
   const handleButton = (path) => {
     setPageName(path);
+  };
+
+  const handleGoButton = (path) => {
+    window.open(path, "_blank");
   };
 
   return (
@@ -68,7 +81,7 @@ function Project({ handleScroll, setPageName }) {
             >
               <Image
                 style={{ width: "100%", height: "100%" }}
-                src={`${process.env.PUBLIC_URL}/img/crello.png`}
+                src={`${process.env.PUBLIC_URL}/img/crello/crello.png`}
               />
             </motion.div>
             <motion.div
@@ -79,7 +92,7 @@ function Project({ handleScroll, setPageName }) {
             >
               <Image
                 style={{ width: "100%", height: "100%" }}
-                src={`${process.env.PUBLIC_URL}/img/relieve.png`}
+                src={`${process.env.PUBLIC_URL}/img/relieve/relieve.png`}
               />
             </motion.div>
           </SimpleGrid>
@@ -106,15 +119,22 @@ function Project({ handleScroll, setPageName }) {
                 로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를
                 완성했습니다.
               </Box>
-              <Button
-                ml={"85%"}
-                mb={"3%"}
-                size={"xs"}
-                colorScheme={"blue"}
-                onClick={() => handleButton("crello")}
-              >
-                자세히
-              </Button>
+              <Flex gap={5} position={"absolute"} right={"3%"}>
+                <Button
+                  size={"xs"}
+                  colorScheme={"green"}
+                  onClick={() => handleGoButton("http://43.200.39.112")}
+                >
+                  Crello
+                </Button>
+                <Button
+                  size={"xs"}
+                  colorScheme={"blue"}
+                  onClick={() => handleButton("crello")}
+                >
+                  자세히
+                </Button>
+              </Flex>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -132,9 +152,14 @@ function Project({ handleScroll, setPageName }) {
                 하고 소통하는 sns의 느낌이 강한 사이트를 만들고 싶었습니다.
                 각자의 추억이 담긴 playlist를 공유하고 소통하는 relieve입니다.
               </Box>
-              <Button ml={"85%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
-                자세히
-              </Button>
+              <Flex gap={5} position={"absolute"} right={"3%"}>
+                <Button size={"xs"} colorScheme={"red"} isDisabled={true}>
+                  배포중단
+                </Button>
+                <Button size={"xs"} colorScheme={"blue"}>
+                  자세히
+                </Button>
+              </Flex>
             </motion.div>
           </SimpleGrid>
         </Box>
@@ -188,7 +213,7 @@ function Project({ handleScroll, setPageName }) {
             >
               <Image
                 style={{ width: "100%", height: "100%" }}
-                src={`${process.env.PUBLIC_URL}/img/crello.png`}
+                src={`${process.env.PUBLIC_URL}/img/crello/crello.png`}
               />
             </motion.div>
             <motion.div
@@ -199,7 +224,7 @@ function Project({ handleScroll, setPageName }) {
             >
               <Image
                 style={{ width: "100%", height: "100%" }}
-                src={`${process.env.PUBLIC_URL}/img/relieve.png`}
+                src={`${process.env.PUBLIC_URL}/img/relieve/relieve.png`}
               />
             </motion.div>
           </SimpleGrid>
@@ -226,15 +251,22 @@ function Project({ handleScroll, setPageName }) {
                 로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를
                 완성했습니다.
               </Box>
-              <Button
-                ml={"70%"}
-                mb={"3%"}
-                size={"xs"}
-                colorScheme={"blue"}
-                onClick={() => handleButton("crello")}
-              >
-                자세히
-              </Button>
+              <Flex gap={3} position={"absolute"} right={"3%"}>
+                <Button
+                  size={"xs"}
+                  colorScheme={"green"}
+                  onClick={() => handleGoButton("http://43.200.39.112")}
+                >
+                  Crello
+                </Button>
+                <Button
+                  size={"xs"}
+                  colorScheme={"blue"}
+                  onClick={() => handleButton("crello")}
+                >
+                  자세히
+                </Button>
+              </Flex>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -252,9 +284,14 @@ function Project({ handleScroll, setPageName }) {
                 하고 소통하는 sns의 느낌이 강한 사이트를 만들고 싶었습니다.
                 각자의 추억이 담긴 playlist를 공유하고 소통하는 relieve입니다.
               </Box>
-              <Button ml={"70%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
-                자세히
-              </Button>
+              <Flex gap={3} position={"absolute"} right={"3%"}>
+                <Button size={"xs"} colorScheme={"red"} isDisabled={true}>
+                  배포중단
+                </Button>
+                <Button size={"xs"} colorScheme={"blue"}>
+                  자세히
+                </Button>
+              </Flex>
             </motion.div>
           </SimpleGrid>
         </Box>
@@ -307,7 +344,7 @@ function Project({ handleScroll, setPageName }) {
           >
             <Image
               style={{ width: "100%", height: "100%" }}
-              src={`${process.env.PUBLIC_URL}/img/crello.png`}
+              src={`${process.env.PUBLIC_URL}/img/crello/crello.png`}
             />
           </motion.div>
           <motion.div
@@ -318,11 +355,15 @@ function Project({ handleScroll, setPageName }) {
           >
             <Image
               style={{ width: "100%", height: "100%" }}
-              src={`${process.env.PUBLIC_URL}/img/relieve.png`}
+              src={`${process.env.PUBLIC_URL}/img/relieve/relieve.png`}
             />
           </motion.div>
         </Box>
-        <Box position={"absolute"} bottom={0} className={"project-body-cover"}>
+        <Box
+          position={"absolute"}
+          bottom={-20}
+          className={"project-body-cover"}
+        >
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -338,18 +379,30 @@ function Project({ handleScroll, setPageName }) {
               <ColorStrong color={"rgb(117,169,191)"}>1인 프로젝트</ColorStrong>
               로 진행했지만 초기 기획에서 벗어나지 않고 프로젝트를 완성했습니다.
             </Box>
-            <Button
-              ml={"75%"}
-              mb={"3%"}
-              size={"xs"}
-              colorScheme={"blue"}
-              onClick={() => {
-                handleButton("crello");
-                window.scrollTo(0, 0);
-              }}
-            >
-              자세히
-            </Button>
+            <Flex gap={3} position={"absolute"} right={"3%"}>
+              <Button
+                size={"xs"}
+                colorScheme={"green"}
+                onClick={() =>
+                  toast({
+                    description: "모바일은 지원하지 않습니다.",
+                    status: "warning",
+                  })
+                }
+              >
+                Crello
+              </Button>
+              <Button
+                size={"xs"}
+                colorScheme={"blue"}
+                onClick={() => {
+                  handleButton("crello");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                자세히
+              </Button>
+            </Flex>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -367,9 +420,14 @@ function Project({ handleScroll, setPageName }) {
               하고 소통하는 sns의 느낌이 강한 사이트를 만들고 싶었습니다. 각자의
               추억이 담긴 playlist를 공유하고 소통하는 relieve입니다.
             </Box>
-            <Button ml={"75%"} mb={"3%"} size={"xs"} colorScheme={"blue"}>
-              자세히
-            </Button>
+            <Flex gap={3} position={"absolute"} right={"3%"}>
+              <Button size={"xs"} colorScheme={"red"} isDisabled={true}>
+                배포중단
+              </Button>
+              <Button size={"xs"} colorScheme={"blue"}>
+                자세히
+              </Button>
+            </Flex>
           </motion.div>
         </Box>
       </Box>

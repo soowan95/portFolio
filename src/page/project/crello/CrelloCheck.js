@@ -106,6 +106,14 @@ function CrelloCheck() {
                 인증/인가를 위해 인메모리db를 사용하려 했지만 이해도 부족으로
                 실패
               </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className={"project-detail-check"}
+              >
+                반응형 웹사이트 미구현
+              </motion.div>
             </Box>
           </Box>
         </SimpleGrid>
@@ -216,6 +224,14 @@ function CrelloCheck() {
               className={"project-detail-check"}
             >
               인증/인가를 위해 인메모리db를 사용하려 했지만 이해도 부족으로 실패
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className={"project-detail-check"}
+            >
+              반응형 웹사이트 미구현
             </motion.div>
           </Box>
         </Box>

@@ -166,7 +166,7 @@ function Skills({ handleScroll }) {
               <Image
                 w={"100%"}
                 h={"100%"}
-                src={`${process.env.PUBLIC_URL}/img/javalogo.png`}
+                src={`${process.env.PUBLIC_URL}/img/logo/javalogo.png`}
               />
             </motion.div>
             <motion.div
@@ -179,7 +179,7 @@ function Skills({ handleScroll }) {
               <Image
                 w={"100%"}
                 h={"100%"}
-                src={`${process.env.PUBLIC_URL}/img/springbootlogo.png`}
+                src={`${process.env.PUBLIC_URL}/img/logo/springbootlogo.png`}
               />
             </motion.div>
             <motion.div
@@ -192,7 +192,7 @@ function Skills({ handleScroll }) {
               <Image
                 w={"100%"}
                 h={"100%"}
-                src={`${process.env.PUBLIC_URL}/img/javascriptlogo.png`}
+                src={`${process.env.PUBLIC_URL}/img/logo/javascriptlogo.png`}
               />
             </motion.div>
             <motion.div
@@ -205,7 +205,7 @@ function Skills({ handleScroll }) {
               <Image
                 w={"100%"}
                 h={"100%"}
-                src={`${process.env.PUBLIC_URL}/img/reactlogo.png`}
+                src={`${process.env.PUBLIC_URL}/img/logo/reactlogo.png`}
               />
             </motion.div>
             <motion.div
@@ -218,7 +218,7 @@ function Skills({ handleScroll }) {
               <Image
                 w={"100%"}
                 h={"100%"}
-                src={`${process.env.PUBLIC_URL}/img/gitlogo.png`}
+                src={`${process.env.PUBLIC_URL}/img/logo/gitlogo.png`}
               />
             </motion.div>
             <motion.div
@@ -231,7 +231,7 @@ function Skills({ handleScroll }) {
               <Image
                 w={"100%"}
                 h={"100%"}
-                src={`${process.env.PUBLIC_URL}/img/awslogo.png`}
+                src={`${process.env.PUBLIC_URL}/img/logo/awslogo.png`}
               />
             </motion.div>
           </SimpleGrid>

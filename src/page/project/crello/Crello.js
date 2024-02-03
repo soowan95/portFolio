@@ -7,6 +7,7 @@ import CrelloPlan from "./CrelloPlan";
 import CrelloCheck from "./CrelloCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import CrelloCapture from "./CrelloCapture";
 
 function Crello({ setPageName }) {
   const [nowShow, setNowShow] = useState("skill");
@@ -18,6 +19,7 @@ function Crello({ setPageName }) {
         {nowShow === "info" && <CrelloInfo />}
         {nowShow === "flow" && <CrelloFlow />}
         {nowShow === "plan" && <CrelloPlan />}
+        {nowShow === "capture" && <CrelloCapture />}
         {nowShow === "check" && <CrelloCheck />}
         <Breadcrumb separator="-" className={"project-detail-nav"}>
           <BreadcrumbItem>
@@ -35,7 +37,7 @@ function Crello({ setPageName }) {
             </Tooltip>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <Tooltip label={"프로젝트"} placement={"top"}>
+            <Tooltip label={"프로젝트 개요"} placement={"top"}>
               <Box onClick={() => setNowShow("info")} cursor={"pointer"}>
                 {nowShow === "info" ? "🔵" : "⚪"}
               </Box>
@@ -52,6 +54,13 @@ function Crello({ setPageName }) {
             <Tooltip label={"기획"} placement={"top"}>
               <Box onClick={() => setNowShow("plan")} cursor={"pointer"}>
                 {nowShow === "plan" ? "🔵" : "⚪"}
+              </Box>
+            </Tooltip>
+          </BreadcrumbItem>
+          <BreadcrumbItem>
+            <Tooltip label={"Crello"} placement={"top"}>
+              <Box onClick={() => setNowShow("capture")} cursor={"pointer"}>
+                {nowShow === "capture" ? "🔵" : "⚪"}
               </Box>
             </Tooltip>
           </BreadcrumbItem>
@@ -78,6 +87,7 @@ function Crello({ setPageName }) {
         <CrelloInfo />
         <CrelloFlow />
         <CrelloPlan />
+        <CrelloCapture />
         <CrelloCheck />
       </Box>
     </>

@@ -30,7 +30,7 @@ function CrelloFlow() {
           <Image
             w={"100%"}
             h={"100%"}
-            src={`${process.env.PUBLIC_URL}/img/crelloflow.png`}
+            src={`${process.env.PUBLIC_URL}/img/crello/crelloflow.png`}
           />
         </motion.div>
       </Box>
@@ -60,7 +60,7 @@ function CrelloFlow() {
           <Image
             w={"100%"}
             h={"100%"}
-            src={`${process.env.PUBLIC_URL}/img/crelloflow.png`}
+            src={`${process.env.PUBLIC_URL}/img/crello/crelloflow.png`}
           />
         </motion.div>
       </Box>

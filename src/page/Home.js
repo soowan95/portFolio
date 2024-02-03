@@ -23,7 +23,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    scrollToComp("project");
+    if (location.pathname !== "/portfolio/") scroller.scrollTo("project");
   }, [pageName]);
 
   const scrollToComp = (comp) => {
