@@ -144,7 +144,9 @@ function CrelloCheck() {
           borderRadius={"10px"}
           bg={"rgba(115,120,208,0.49)"}
         >
-          <Box className={"project-detail-subtitle"}>추후 계획</Box>
+          <Box className={"project-detail-subtitle"} mt={"20px"}>
+            추후 계획
+          </Box>
           <OrderedList className={"project-detail-check-footer"}>
             <ListItem className={"project-detail-check-footer-item"}>
               프로젝트를 시작하기 전 기획 기간을 길게 설정하여 사용 기술들을
@@ -277,7 +279,9 @@ function CrelloCheck() {
           borderRadius={"10px"}
           bg={"rgba(115,120,208,0.49)"}
         >
-          <Box className={"project-detail-subtitle"}>추후 계획</Box>
+          <Box className={"project-detail-subtitle"} mt={"10px"}>
+            추후 계획
+          </Box>
           <OrderedList className={"project-detail-check-footer"}>
             <ListItem className={"project-detail-check-footer-item"}>
               프로젝트를 시작하기 전 기획 기간을 길게 설정하여 사용 기술들을
