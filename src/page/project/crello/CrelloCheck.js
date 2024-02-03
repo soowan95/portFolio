@@ -107,9 +107,9 @@ function CrelloCheck() {
                 실패
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 3 }}
                 className={"project-detail-check"}
               >
                 반응형 웹사이트 미구현
