@@ -269,8 +269,13 @@
     .project-detail-check-footer {
         margin-left: 5%;
         margin-top: 15px;
-        margin-bottom: 50px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        padding-right: 5%;
+    }
+    .project-detail-check-footer-item {
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -543,7 +548,13 @@
     .project-detail-check-footer {
         margin-left: 5%;
         margin-top: 15px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    .project-detail-check-footer-item {
+        margin-left: 5%;
+        padding-right: 5%;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     .project-detail-nav {
         position: fixed;
@@ -838,6 +849,12 @@
         margin-left: 5%;
         margin-top: 15px;
         font-size: 1.5rem;
+    }
+    .project-detail-check-footer-item {
+        margin-left: 5%;
+        padding-right: 5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .project-detail-nav {
         position: fixed;

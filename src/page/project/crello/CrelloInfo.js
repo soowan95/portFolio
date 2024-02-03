@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, SimpleGrid } from "@chakra-ui/react";
+import { Box, ListItem, SimpleGrid, UnorderedList } from "@chakra-ui/react";
 
 function CrelloInfo() {
   return (
@@ -32,14 +32,16 @@ function CrelloInfo() {
             >
               개요
             </motion.div>
-            <Box className={"project-detail-info-box"}>
+            <UnorderedList className={"project-detail-info-box"}>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 1.5 }}
                 className={"project-detail-info"}
               >
-                일정을 편하게 관리하고 공유할 수 있는 사이트
+                <ListItem>
+                  일정을 편하게 관리하고 공유할 수 있는 사이트
+                </ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -47,9 +49,9 @@ function CrelloInfo() {
                 transition={{ duration: 1, delay: 2 }}
                 className={"project-detail-info"}
               >
-                trello 클론 코딩
+                <ListItem>trello 클론 코딩</ListItem>
               </motion.div>
-            </Box>
+            </UnorderedList>
           </Box>
           <Box>
             <motion.div
@@ -60,14 +62,14 @@ function CrelloInfo() {
             >
               기간 / 인원
             </motion.div>
-            <Box className={"project-detail-info-box"}>
+            <UnorderedList className={"project-detail-info-box"}>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 1.5 }}
                 className={"project-detail-info"}
               >
-                2024. 01 .02 ~ 2024. 01. 19
+                <ListItem>2024. 01 .02 ~ 2024. 01. 19</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -75,9 +77,9 @@ function CrelloInfo() {
                 transition={{ duration: 1, delay: 2 }}
                 className={"project-detail-info"}
               >
-                1인 프로젝트
+                <ListItem>1인 프로젝트</ListItem>
               </motion.div>
-            </Box>
+            </UnorderedList>
           </Box>
           <Box>
             <motion.div
@@ -88,14 +90,16 @@ function CrelloInfo() {
             >
               핵심 기능
             </motion.div>
-            <Box className={"project-detail-info-box"}>
+            <UnorderedList className={"project-detail-info-box"}>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 1.5 }}
                 className={"project-detail-info"}
               >
-                카카오톡, 네이버 소셜 로그인 & 이메일 인증 기능
+                <ListItem>
+                  카카오톡, 네이버 소셜 로그인 & 이메일 인증 기능
+                </ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -103,7 +107,7 @@ function CrelloInfo() {
                 transition={{ duration: 1, delay: 2 }}
                 className={"project-detail-info"}
               >
-                드래그 앤 드랍으로 손쉬운 일정 관리
+                <ListItem>드래그 앤 드랍으로 손쉬운 일정 관리</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -111,7 +115,7 @@ function CrelloInfo() {
                 transition={{ duration: 1, delay: 2.5 }}
                 className={"project-detail-info"}
               >
-                닉네임, 해시코드로 검색 가능
+                <ListItem>닉네임, 해시코드로 검색 가능</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -119,9 +123,9 @@ function CrelloInfo() {
                 transition={{ duration: 1, delay: 3 }}
                 className={"project-detail-info"}
               >
-                멤버십 구매로 추가 board 사용 가능
+                <ListItem>멤버십 구매로 추가 board 사용 가능</ListItem>
               </motion.div>
-            </Box>
+            </UnorderedList>
           </Box>
           <Box>
             <motion.div
@@ -132,14 +136,14 @@ function CrelloInfo() {
             >
               개인 성과
             </motion.div>
-            <Box className={"project-detail-info-box"}>
+            <UnorderedList className={"project-detail-info-box"}>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 1.5 }}
                 className={"project-detail-info"}
               >
-                Spring Security 구현 경험
+                <ListItem>Spring Security 구현 경험</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -147,7 +151,7 @@ function CrelloInfo() {
                 transition={{ duration: 1, delay: 2 }}
                 className={"project-detail-info"}
               >
-                JWT를 이용한 인증/인가 경험
+                <ListItem>JWT를 이용한 인증/인가 경험</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -155,9 +159,9 @@ function CrelloInfo() {
                 transition={{ duration: 1, delay: 2.5 }}
                 className={"project-detail-info"}
               >
-                JPA를 통해 orm 경험
+                <ListItem>JPA를 통해 orm 경험</ListItem>
               </motion.div>
-            </Box>
+            </UnorderedList>
           </Box>
         </SimpleGrid>
       </Box>
@@ -188,14 +192,14 @@ function CrelloInfo() {
           >
             개요
           </motion.div>
-          <Box className={"project-detail-info-box"}>
+          <UnorderedList className={"project-detail-info-box"}>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              일정을 편하게 관리하고 공유할 수 있는 사이트
+              <ListItem>일정을 편하게 관리하고 공유할 수 있는 사이트</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -203,9 +207,9 @@ function CrelloInfo() {
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              trello 클론 코딩
+              <ListItem>trello 클론 코딩</ListItem>
             </motion.div>
-          </Box>
+          </UnorderedList>
         </Box>
         <Box>
           <motion.div
@@ -216,14 +220,14 @@ function CrelloInfo() {
           >
             기간 / 인원
           </motion.div>
-          <Box className={"project-detail-info-box"}>
+          <UnorderedList className={"project-detail-info-box"}>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              2024. 01 .02 ~ 2024. 01. 19
+              <ListItem>2024. 01 .02 ~ 2024. 01. 19</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -231,9 +235,9 @@ function CrelloInfo() {
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              1인 프로젝트
+              <ListItem>1인 프로젝트</ListItem>
             </motion.div>
-          </Box>
+          </UnorderedList>
         </Box>
         <Box>
           <motion.div
@@ -244,14 +248,16 @@ function CrelloInfo() {
           >
             핵심 기능
           </motion.div>
-          <Box className={"project-detail-info-box"}>
+          <UnorderedList className={"project-detail-info-box"}>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              카카오톡, 네이버 소셜 로그인 & 이메일 인증 기능
+              <ListItem>
+                카카오톡, 네이버 소셜 로그인 & 이메일 인증 기능
+              </ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -259,7 +265,7 @@ function CrelloInfo() {
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              드래그 앤 드랍으로 손쉬운 일정 관리
+              <ListItem>드래그 앤 드랍으로 손쉬운 일정 관리</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -267,7 +273,7 @@ function CrelloInfo() {
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              닉네임, 해시코드로 검색 가능
+              <ListItem>닉네임, 해시코드로 검색 가능</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -275,9 +281,9 @@ function CrelloInfo() {
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              멤버십 구매로 추가 board 사용 가능
+              <ListItem>멤버십 구매로 추가 board 사용 가능</ListItem>
             </motion.div>
-          </Box>
+          </UnorderedList>
         </Box>
         <Box>
           <motion.div
@@ -288,14 +294,14 @@ function CrelloInfo() {
           >
             개인 성과
           </motion.div>
-          <Box className={"project-detail-info-box"}>
+          <UnorderedList className={"project-detail-info-box"}>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              Spring Security 구현 경험
+              <ListItem>Spring Security 구현 경험</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -303,7 +309,7 @@ function CrelloInfo() {
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              JWT를 이용한 인증/인가 경험
+              <ListItem>JWT를 이용한 인증/인가 경험</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -311,9 +317,9 @@ function CrelloInfo() {
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              JPA를 통해 orm 경험
+              <ListItem>JPA를 통해 orm 경험</ListItem>
             </motion.div>
-          </Box>
+          </UnorderedList>
         </Box>
       </Box>
     </>
