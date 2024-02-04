@@ -8,9 +8,12 @@ import RelieveFlow from "./RelieveFlow";
 import RelievePlan from "./RelievePlan";
 import RelieveCapture from "./RelieveCapture";
 import RelieveCheck from "./RelieveCheck";
+import { useNavigate } from "react-router-dom";
 
 function Relieve({ setPageName }) {
   const [nowShow, setNowShow] = useState("skill");
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -79,7 +82,10 @@ function Relieve({ setPageName }) {
           top={"3%"}
           right={"6%"}
           zIndex={2}
-          onClick={() => setPageName("home")}
+          onClick={() => {
+            setPageName("home");
+            navigate("/portfolio");
+          }}
         >
           <FontAwesomeIcon icon={faHouse} />
         </Box>

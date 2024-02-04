@@ -8,9 +8,12 @@ import CrelloCheck from "./CrelloCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import CrelloCapture from "./CrelloCapture";
+import { useNavigate } from "react-router-dom";
 
 function Crello({ setPageName }) {
   const [nowShow, setNowShow] = useState("skill");
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -79,7 +82,10 @@ function Crello({ setPageName }) {
           top={"3%"}
           right={"6%"}
           zIndex={2}
-          onClick={() => setPageName("home")}
+          onClick={() => {
+            setPageName("home");
+            navigate("/portfolio");
+          }}
         >
           <FontAwesomeIcon icon={faHouse} />
         </Box>
