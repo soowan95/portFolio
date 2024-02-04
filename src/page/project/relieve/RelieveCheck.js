@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import {
   Box,
   ListItem,
@@ -6,8 +5,9 @@ import {
   SimpleGrid,
   UnorderedList,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
-function CrelloCheck() {
+function RelieveCheck() {
   return (
     <>
       <Box className={"desktop-tablet-project-detail"}>
@@ -45,10 +45,7 @@ function CrelloCheck() {
                 transition={{ duration: 1, delay: 1.5 }}
                 className={"project-detail-check"}
               >
-                <ListItem>
-                  axios interceptor을 사용하며 cors 오류를 경험하고 해결하는
-                  과정을 배움
-                </ListItem>
+                <ListItem>카카오 로그인을 구현하며 Oauth에 대한 이해</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -57,8 +54,7 @@ function CrelloCheck() {
                 className={"project-detail-check"}
               >
                 <ListItem>
-                  JWT를 통한 인증/인가를 구현하며 spring boot의 동작 방식에 대한
-                  이해가 높아짐
+                  실시간 채팅 기능을 구현하며 Web Socket에 대한 이해
                 </ListItem>
               </motion.div>
               <motion.div
@@ -68,8 +64,8 @@ function CrelloCheck() {
                 className={"project-detail-check"}
               >
                 <ListItem>
-                  pathvariable에 #으로 시작하는 변수를 사용하려 시도하며 dns에
-                  대해 학습함
+                  팀원들과 소통하며 문제를 해결하는 과정에서 협업의 중요성을
+                  배움
                 </ListItem>
               </motion.div>
               <motion.div
@@ -78,9 +74,7 @@ function CrelloCheck() {
                 transition={{ duration: 1, delay: 3 }}
                 className={"project-detail-check"}
               >
-                <ListItem>
-                  프로젝트를 진행하면서 생긴 오류들을 기록하는 습관이 생김
-                </ListItem>
+                <ListItem>Mybatis를 이용한 CRUD 구현</ListItem>
               </motion.div>
             </UnorderedList>
           </Box>
@@ -100,9 +94,7 @@ function CrelloCheck() {
                 transition={{ duration: 1, delay: 1.5 }}
                 className={"project-detail-check"}
               >
-                <ListItem>
-                  1인 프로젝트를 진행하여 협업에 대한 경험 미흡
-                </ListItem>
+                <ListItem>프로젝트를 기획하며 컨벤션을 설정하지 않음</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -111,8 +103,7 @@ function CrelloCheck() {
                 className={"project-detail-check"}
               >
                 <ListItem>
-                  충분한 학습을 하지 않고 spring security를 사용하여 많은 오류를
-                  경험
+                  Github을 사용하며 issue를 충분히 활용하지 못함
                 </ListItem>
               </motion.div>
               <motion.div
@@ -121,10 +112,7 @@ function CrelloCheck() {
                 transition={{ duration: 1, delay: 2.5 }}
                 className={"project-detail-check"}
               >
-                <ListItem>
-                  인증/인가를 위해 인메모리db를 사용하려 했지만 이해도 부족으로
-                  실패
-                </ListItem>
+                <ListItem>프로젝트 중 발생한 오류를 기록하지 않음</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -148,17 +136,13 @@ function CrelloCheck() {
           </Box>
           <OrderedList className={"project-detail-check-footer"}>
             <ListItem className={"project-detail-check-footer-item"}>
-              프로젝트를 시작하기 전 기획 기간을 길게 설정하여 사용 기술들을
-              충분히 학습.
+              figjam을 활용하여 보다 가시성이 좋은 기획안 만들기.
             </ListItem>
             <ListItem className={"project-detail-check-footer-item"}>
-              단위 테스트와 통합 테스트를 진행하여 프로젝트의 완성도를 높이기.
+              JWT를 통한 인증/인가 구현하기.
             </ListItem>
             <ListItem className={"project-detail-check-footer-item"}>
-              인메모리db를 학습하여 실무적인 인증/인가 서비스를 구현.
-            </ListItem>
-            <ListItem className={"project-detail-check-footer-item"}>
-              Github action을 활용한 ci/cd 구현.
+              swagger-ui 등 협업을 위한 도구 적극 활용하기.
             </ListItem>
           </OrderedList>
         </Box>
@@ -197,7 +181,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>cors 오류를 경험하고 해결하는 과정을 배움</ListItem>
+              <ListItem>Oauth에 대한 이해</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -205,7 +189,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>spring boot의 동작 방식에 대한 이해가 높아짐</ListItem>
+              <ListItem>Web Socket에 대한 이해</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -213,7 +197,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>dns에 대해 학습함</ListItem>
+              <ListItem>팀원들과의 소통에 대한 중요성을 배움</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -221,9 +205,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>
-                프로젝트를 진행하면서 생긴 오류들을 기록하는 습관이 생김
-              </ListItem>
+              <ListItem>Mybatis를 이용한 CRUD 구현</ListItem>
             </motion.div>
           </UnorderedList>
         </Box>
@@ -243,7 +225,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>1인 프로젝트를 진행하여 협업에 대한 경험 미흡</ListItem>
+              <ListItem>기획 단계에서 컨벤션을 설정하지 않음</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -251,7 +233,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>spring security에 대한 학습 미흡</ListItem>
+              <ListItem>Github 활용 부족</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -259,9 +241,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>
-                인메모리db를 사용하려 했지만 이해도 부족으로 실패
-              </ListItem>
+              <ListItem>발생한 오류에 대해 기록하지 않음</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -285,17 +265,13 @@ function CrelloCheck() {
           </Box>
           <OrderedList className={"project-detail-check-footer"}>
             <ListItem className={"project-detail-check-footer-item"}>
-              프로젝트를 시작하기 전 기획 기간을 길게 설정하여 사용 기술들을
-              충분히 학습.
+              figjam을 활용하여 보다 가독성이 좋은 기획안 만들기.
             </ListItem>
             <ListItem className={"project-detail-check-footer-item"}>
-              단위 테스트와 통합 테스트를 진행하여 프로젝트의 완성도를 높이기.
+              JWT를 통한 인증/인가 구현하기.
             </ListItem>
             <ListItem className={"project-detail-check-footer-item"}>
-              인메모리db를 학습하여 실무적인 인증/인가 서비스를 구현.
-            </ListItem>
-            <ListItem className={"project-detail-check-footer-item"}>
-              Github action을 활용한 ci/cd 구현.
+              swagger-ui 등 협업을 위한 도구 적극 활용하기.
             </ListItem>
           </OrderedList>
         </Box>
@@ -304,4 +280,4 @@ function CrelloCheck() {
   );
 }
 
-export default CrelloCheck;
+export default RelieveCheck;

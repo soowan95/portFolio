@@ -11,6 +11,7 @@ import Career from "./Career";
 import Project from "./project/Project";
 import { useLocation } from "react-router-dom";
 import Crello from "./project/crello/Crello";
+import Relieve from "./project/relieve/Relieve";
 
 function Home() {
   const [comp, setComp] = useState("info");
@@ -70,6 +71,7 @@ function Home() {
         </Flex>
       )}
       {pageName === "crello" && <Crello setPageName={setPageName} />}
+      {pageName === "relieve" && <Relieve setPageName={setPageName} />}
     </>
   );
 }

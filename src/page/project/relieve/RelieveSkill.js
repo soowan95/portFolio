@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
 import { Box, Flex, SimpleGrid } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
-function CrelloSkill() {
+function RelieveSkill() {
   return (
     <>
       <Box className={"desktop-tablet-project-detail"}>
@@ -53,15 +53,7 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 2 }}
             className={"project-detail-skill"}
           >
-            Spring Security 6,
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 2.2 }}
-            className={"project-detail-skill"}
-          >
-            Spring Data JPA 5
+            Mybatis 3
           </motion.div>
         </Flex>
         <motion.div
@@ -207,14 +199,6 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 1.7 }}
             className={"project-detail-skill"}
           >
-            Swagger-ui,
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 2 }}
-            className={"project-detail-skill"}
-          >
             Figma
           </motion.div>
         </Flex>
@@ -273,15 +257,7 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 1 }}
             className={"project-detail-skill"}
           >
-            Spring Security 6
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.2 }}
-            className={"project-detail-skill"}
-          >
-            Spring Data JPA 5
+            Mybatis 3
           </motion.div>
         </SimpleGrid>
         <motion.div
@@ -447,14 +423,6 @@ function CrelloSkill() {
             transition={{ duration: 1, delay: 0.7 }}
             className={"project-detail-skill"}
           >
-            Swagger-ui
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-            className={"project-detail-skill"}
-          >
             Figma
           </motion.div>
         </SimpleGrid>
@@ -463,4 +431,4 @@ function CrelloSkill() {
   );
 }
 
-export default CrelloSkill;
+export default RelieveSkill;

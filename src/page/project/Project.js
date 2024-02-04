@@ -156,7 +156,11 @@ function Project({ handleScroll, setPageName }) {
                 <Button size={"xs"} colorScheme={"red"} isDisabled={true}>
                   배포중단
                 </Button>
-                <Button size={"xs"} colorScheme={"blue"}>
+                <Button
+                  size={"xs"}
+                  colorScheme={"blue"}
+                  onClick={() => handleButton("relieve")}
+                >
                   자세히
                 </Button>
               </Flex>
@@ -288,7 +292,11 @@ function Project({ handleScroll, setPageName }) {
                 <Button size={"xs"} colorScheme={"red"} isDisabled={true}>
                   배포중단
                 </Button>
-                <Button size={"xs"} colorScheme={"blue"}>
+                <Button
+                  size={"xs"}
+                  colorScheme={"blue"}
+                  onClick={() => handleButton("relieve")}
+                >
                   자세히
                 </Button>
               </Flex>
@@ -367,7 +375,7 @@ function Project({ handleScroll, setPageName }) {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 2 }}
             style={{ backgroundColor: "rgba(255,255,255,0.8)" }}
             className={"project-block"}
           >
@@ -407,7 +415,7 @@ function Project({ handleScroll, setPageName }) {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 2 }}
             style={{ backgroundColor: "rgba(255,255,255,0.8)" }}
             className={"project-block"}
           >
@@ -424,7 +432,14 @@ function Project({ handleScroll, setPageName }) {
               <Button size={"xs"} colorScheme={"red"} isDisabled={true}>
                 배포중단
               </Button>
-              <Button size={"xs"} colorScheme={"blue"}>
+              <Button
+                size={"xs"}
+                colorScheme={"blue"}
+                onClick={() => {
+                  handleButton("relieve");
+                  window.scrollTo(0, 0);
+                }}
+              >
                 자세히
               </Button>
             </Flex>
