@@ -24,7 +24,8 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    if (location.pathname !== "/portfolio/") scroller.scrollTo("project");
+    if (!location.pathname.endsWith("/portfolio/"))
+      scroller.scrollTo("project");
   }, [pageName]);
 
   const scrollToComp = (comp) => {

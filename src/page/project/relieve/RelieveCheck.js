@@ -136,7 +136,7 @@ function RelieveCheck() {
           </Box>
           <OrderedList className={"project-detail-check-footer"}>
             <ListItem className={"project-detail-check-footer-item"}>
-              figjam을 활용하여 보다 가시성이 좋은 기획안 만들기.
+              figjam을 활용하여 보다 가독성이 좋은 기획안 만들기.
             </ListItem>
             <ListItem className={"project-detail-check-footer-item"}>
               JWT를 통한 인증/인가 구현하기.

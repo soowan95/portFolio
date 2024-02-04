@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Box, Flex } from "@chakra-ui/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointer } from "@fortawesome/free-regular-svg-icons";
 
 function CareerContent({
   duration,
@@ -26,6 +28,9 @@ function CareerContent({
           }}
         >
           {content}
+          <span style={{ marginLeft: "10px" }}>
+            <FontAwesomeIcon icon={faHandPointer} />
+          </span>
         </motion.div>
       </Flex>
     </motion.div>

@@ -9,7 +9,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
 import AboutIcon from "../util/about/AboutIcon";
-import { faFaceLaughBeam } from "@fortawesome/free-regular-svg-icons";
+import {
+  faFaceLaughBeam,
+  faHandPointer,
+} from "@fortawesome/free-regular-svg-icons";
 
 function About({ handleScroll }) {
   const [index, setIndex] = useState(0);
@@ -65,7 +68,11 @@ function About({ handleScroll }) {
           _hover={{ bg: "rgba(224,215,100,0.2)" }}
           className={"about-body-title"}
         >
-          1️⃣ 저는 개인보다 팀을 중시하는 사람입니다. <br />
+          1️⃣ 저는 개인보다 팀을 중시하는 사람입니다.{" "}
+          <span style={{ marginLeft: "10px" }} className={"pointer-icon"}>
+            <FontAwesomeIcon icon={faHandPointer} />
+          </span>{" "}
+          <br />
           <span className={"about-body-semi-title"}>
             - 팀으로 운영되는 헬스 트레이너 팀, 특전부대 장교 출신!
           </span>
@@ -162,7 +169,11 @@ function About({ handleScroll }) {
           _hover={{ bg: "rgba(126,217,217,0.2)" }}
           className={"about-body-title"}
         >
-          2️⃣ 저는 긍정적이고 책임감이 투철한 사람입니다. <br />
+          2️⃣ 저는 긍정적이고 책임감이 투철한 사람입니다.{" "}
+          <span style={{ marginLeft: "10px" }} className={"pointer-icon"}>
+            <FontAwesomeIcon icon={faHandPointer} />
+          </span>{" "}
+          <br />
           <span className={"about-body-semi-title"}>
             - 좌우명 : 긍정적인 사고가 긍정적인 결과를 만든다!
           </span>
@@ -267,7 +278,11 @@ function About({ handleScroll }) {
           _hover={{ bg: "rgba(127,225,129,0.2)" }}
           className={"about-body-title"}
         >
-          3️⃣ 입사 후에 더욱 발전하는 제가 되겠습니다. <br />
+          3️⃣ 입사 후에 더욱 발전하는 제가 되겠습니다.{" "}
+          <span style={{ marginLeft: "10px" }} className={"pointer-icon"}>
+            <FontAwesomeIcon icon={faHandPointer} />
+          </span>{" "}
+          <br />
           <span className={"about-body-semi-title"}>
             - 개인의 발전이 곧 조직의 발전이다!
           </span>
