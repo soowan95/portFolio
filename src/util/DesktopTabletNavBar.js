@@ -11,16 +11,7 @@ function DesktopTabletNavBar({ scrollToComp }) {
       >
         <Image src={`${process.env.PUBLIC_URL}/img/photo.jpg`} />
       </Box>
-      <Box
-        fontSize={"2rem"}
-        textAlign={"center"}
-        mt={"-20px"}
-        fontFamily={"serif"}
-        fontWeight={"bolder"}
-        color={"black"}
-      >
-        김수완
-      </Box>
+      <Box className={"nav-bar-name"}>김수완</Box>
       <Box textAlign={"center"} className={"nav-bar-info"} color={"black"}>
         Back end developer
       </Box>

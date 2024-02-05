@@ -6,14 +6,22 @@
     .nav-bar-photo {
         width: 80px;
         height: 80px;
-        margin: 20px auto;
+        margin: 30px auto;
+    }
+    .nav-bar-name {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 30px;
+        font-family: serif;
+        font-weight: bolder;
+        color: black;
     }
     .nav-bar-info {
         font-size: 1rem;
     }
     .nav-bar-button {
         font-size: 1rem;
-        margin-top: 10px
+        margin-top: 20px
     }
     .content {
         width: 100%;
@@ -311,13 +319,21 @@
     .nav-bar-photo {
         width: 80px;
         height: 80px;
-        margin: 30px auto;
+        margin: 10px auto;
+    }
+    .nav-bar-name {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 10px;
+        font-family: serif;
+        font-weight: bolder;
+        color: black;
     }
     .nav-bar-info {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .nav-bar-button {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-top: 10px
     }
     .pointer-icon {
@@ -619,6 +635,14 @@
         width: 150px;
         height: 150px;
         margin: 50px auto;
+    }
+    .nav-bar-name {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+        font-family: serif;
+        font-weight: bolder;
+        color: black;
     }
     .nav-bar-info {
         font-size: 1.5rem;
