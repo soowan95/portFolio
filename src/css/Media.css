@@ -364,7 +364,8 @@
     }
     .about-header {
         font-size: 2rem;
-        margin-left: -5%;
+        width: 80%;
+        margin-left: -2%;
         margin-top: 350px;
     }
     .about-body {
@@ -410,7 +411,8 @@
     }
     .skills-header {
         font-size: 1.8rem;
-        margin-left: -5%;
+        width: 80%;
+        margin-left: -2%;
         margin-top: 200px;
     }
     .skills-body-title1 {
@@ -443,7 +445,8 @@
     }
     .career-header {
         font-size: 1.8rem;
-        margin-left: -5%;
+        width: 80%;
+        margin-left: -2%;
         margin-top: 200px;
     }
     .career-header-box {
@@ -503,7 +506,8 @@
     }
     .project-header {
         font-size: 1.8rem;
-        margin-left: -5%;
+        width: 80%;
+        margin-left: -2%;
         margin-top: 200px;
     }
     .project-body-title {
@@ -603,7 +607,8 @@
     }
     .study-header {
         font-size: 1.8rem;
-        margin-left: -5%;
+        width: 80%;
+        margin-left: -2%;
         margin-top: 200px;
     }
     .study-body-title {
