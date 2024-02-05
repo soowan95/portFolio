@@ -670,9 +670,9 @@
         margin-left: 10%;
         margin-top: 50px;
         align-items: center;
-        position: relative;
     }
     .contact-body-left {
+        position: relative;
         width: 100%;
     }
     .contact-body-input {

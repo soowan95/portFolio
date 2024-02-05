@@ -178,6 +178,7 @@ function Contact({ handleScroll }) {
                 if (e.code === "Enter" || e.code === "numpadEnter") sendMail();
               }}
             />
+            <Box h={"5vh"} opacity={0} />
             <Button
               onClick={sendMail}
               className={"contact-body-input"}
@@ -195,13 +196,7 @@ function Contact({ handleScroll }) {
             <Box
               className={"contact-body-box"}
               textDecor={"underline"}
-              onClick={() => {
-                onCopy();
-                toast({
-                  description: "클립보드에 복사됐습니다.",
-                  status: "success",
-                });
-              }}
+              onClick={onCopy}
               cursor={"pointer"}
             >
               010-5321-9565
