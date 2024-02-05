@@ -339,7 +339,7 @@
     }
     .contact-body-box {
         text-align: center;
-        margin: 20px auto;
+        margin: 0px auto;
     }
 }
 
@@ -693,10 +693,10 @@
         width: 100%;
         font-size: 1.2rem;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .contact-body-box {
-        margin: 20px auto;
+        margin: 0px auto;
     }
 }
 
