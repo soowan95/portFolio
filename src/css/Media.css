@@ -323,9 +323,15 @@
     }
     .contact-body-left {
         width: 100%;
+        overflow: hidden;
     }
     .contact-body-input {
         margin-top: 10px;
+    }
+    .contact-body-button {
+        margin-top: 10px;
+        margin-left: 100%;
+        transform: translateX(-100%);
     }
     .contact-body-right {
         margin-top: 50px;
@@ -672,11 +678,16 @@
         align-items: center;
     }
     .contact-body-left {
-        position: relative;
         width: 100%;
+        overflow: hidden;
     }
     .contact-body-input {
         margin-top: 10px;
+    }
+    .contact-body-button {
+        margin-top: 10px;
+        margin-left: 100%;
+        transform: translateX(-100%);
     }
     .contact-body-right {
         width: 100%;
@@ -1037,6 +1048,9 @@
         width: 45%;
     }
     .contact-body-input {
+        margin-top: 10px;
+    }
+    .contact-body-button {
         margin-top: 10px;
     }
     .contact-body-right {

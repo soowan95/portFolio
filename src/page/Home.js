@@ -74,7 +74,7 @@ function Home() {
             <Element name={"contact"}>
               <Contact handleScroll={handleScroll} />
             </Element>
-            <Box h={"20vh"}></Box>
+            <Box h={"200px"}></Box>
           </Box>
         </Flex>
       )}

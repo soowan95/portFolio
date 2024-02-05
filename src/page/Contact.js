@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as emailjs from "@emailjs/browser";
 
 function Contact({ handleScroll }) {
@@ -18,13 +18,14 @@ function Contact({ handleScroll }) {
 
   const toast = useToast();
 
-  const [ref, inView] = useInView();
+  const [dref, dinView] = useInView();
+  const [tmref, tminView] = useInView();
 
   const { onCopy } = useClipboard("010-5321-9565");
 
   useEffect(() => {
-    if (inView) handleScroll("contact");
-  }, [inView]);
+    if (dinView || tminView) handleScroll("contact");
+  }, [dinView, tminView]);
 
   const sendMail = (e) => {
     e.preventDefault();
@@ -58,7 +59,7 @@ function Contact({ handleScroll }) {
     <>
       <Box className={"desktop-contact"}>
         <motion.div
-          ref={ref}
+          ref={dref}
           initial={{ opacity: 0, x: "5%" }}
           whileInView={{ opacity: 1, x: "15%" }}
           transition={{ duration: 1 }}
@@ -133,7 +134,7 @@ function Contact({ handleScroll }) {
       </Box>
       <Box className={"tablet-mobile-contact"}>
         <motion.div
-          ref={ref}
+          ref={tmref}
           initial={{ opacity: 0, x: "5%" }}
           whileInView={{ opacity: 1, x: "15%" }}
           transition={{ duration: 1 }}
@@ -178,15 +179,11 @@ function Contact({ handleScroll }) {
                 if (e.code === "Enter" || e.code === "numpadEnter") sendMail();
               }}
             />
-            <Box h={"5vh"} opacity={0} />
             <Button
               onClick={sendMail}
-              className={"contact-body-input"}
+              className={"contact-body-button"}
               size={"sm"}
               isDisabled={!email || email === "" || !name || name === ""}
-              position={"absolute"}
-              right={0}
-              bottom={0}
             >
               Send
             </Button>
