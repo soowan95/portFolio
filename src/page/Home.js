@@ -13,6 +13,7 @@ import { useLocation } from "react-router-dom";
 import Crello from "./project/crello/Crello";
 import Relieve from "./project/relieve/Relieve";
 import Study from "./Study";
+import Contact from "./Contact";
 
 function Home() {
   const [comp, setComp] = useState("info");
@@ -70,7 +71,10 @@ function Home() {
             <Element name={"study"}>
               <Study handleScroll={handleScroll} />
             </Element>
-            <Box h={"5vh"}></Box>
+            <Element name={"contact"}>
+              <Contact handleScroll={handleScroll} />
+            </Element>
+            <Box h={"20vh"}></Box>
           </Box>
         </Flex>
       )}

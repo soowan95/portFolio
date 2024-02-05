@@ -238,7 +238,7 @@ function Project({ handleScroll, setPageName }) {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 2 }}
               style={{ backgroundColor: "rgba(255,255,255,0.8)" }}
               className={"project-block"}
             >
@@ -275,7 +275,7 @@ function Project({ handleScroll, setPageName }) {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 2 }}
               style={{ backgroundColor: "rgba(255,255,255,0.8)" }}
               className={"project-block"}
             >
