@@ -346,30 +346,30 @@
     }
     .info-header {
         width: 85%;
-        margin-left: 150px;
+        margin-left: 10%;
         padding-top: 100px;
         font-size: 2rem;
     }
     .info-body {
         width: 85%;
-        margin-left: 150px;
+        margin-left: 10%;
         margin-top: 50px;
         font-size: 1.5rem;
     }
     .info-footer {
         width: 85%;
-        margin-left: 150px;
+        margin-left: 10%;
         margin-top: 50px;
         font-size: 1.2rem;
     }
     .about-header {
         font-size: 2rem;
-        margin-left: -3%;
+        margin-left: -5%;
         margin-top: 350px;
     }
     .about-body {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 30px;
     }
     .about-body-title {
@@ -382,7 +382,7 @@
     }
     .about-body-content {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 30px;
     }
     .about-body-content-text {
@@ -390,7 +390,7 @@
     }
     .about-icon-flex {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 100px;
     }
     .about-icon {
@@ -399,7 +399,7 @@
     }
     .about-footer {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 50px
     }
     .about-footer-title {
@@ -410,29 +410,29 @@
     }
     .skills-header {
         font-size: 1.8rem;
-        margin-left: -3%;
+        margin-left: -5%;
         margin-top: 200px;
     }
     .skills-body-title1 {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 30px;
         font-size: 1rem;
     }
     .skills-body-title2 {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 20px;
         font-size: 0.9rem
     }
     .skills-body-progress {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 50px;
     }
     .skills-body-cover {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
     }
     .skills-block {
         height: 200px;
@@ -443,12 +443,12 @@
     }
     .career-header {
         font-size: 1.8rem;
-        margin-left: -3%;
+        margin-left: -5%;
         margin-top: 200px;
     }
     .career-header-box {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 50px;
         overflow-x: hidden;
     }
@@ -465,7 +465,7 @@
     }
     .career-header-content {
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 70px;
         font-weight: bolder;
         border: 1px solid;
@@ -474,14 +474,14 @@
     }
     .career-body {
         width: 85%;
-        margin-left: 15%;
+        margin-left: 12%;
         margin-top: 15px;
     }
     .career-body-title {
         font-size: 1.3rem;
         font-weight: bolder;
         width: 85%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-top: 200px;
     }
     .career-body-content {
@@ -502,23 +502,23 @@
     }
     .project-header {
         font-size: 1.8rem;
-        margin-left: -3%;
+        margin-left: -5%;
         margin-top: 200px;
     }
     .project-body-title {
         width: 85%;
-        margin-left: 15%;
+        margin-left: 10%;
         margin-top: 30px;
         font-size: 0.9rem;
     }
     .project-body-projects {
         width: 85%;
-        margin-left: 15%;
+        margin-left: 10%;
         margin-top: 50px;
     }
     .project-body-cover {
         width: 85%;
-        margin-left: 15%;
+        margin-left: 10%;
     }
     .project-block {
         position: relative;
@@ -602,19 +602,19 @@
     }
     .study-header {
         font-size: 1.8rem;
-        margin-left: -3%;
+        margin-left: -5%;
         margin-top: 200px;
     }
     .study-body-title {
         width: 85%;
-        margin-left: 15%;
+        margin-left: 10%;
         margin-top: 50px;
         font-size: 1.2rem;
         font-weight: 600;
     }
     .study-body-content {
         width: 85%;
-        margin-left: 17%;
+        margin-left: 12%;
         margin-top: 20px;
         font-size: 1rem;
     }
