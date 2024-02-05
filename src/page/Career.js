@@ -72,7 +72,7 @@ function Career({ handleScroll, scrollToComp }) {
         >
           CAREER
         </Box>
-        🎞 저는 이런 경험이 있습니다.
+        🎬 저는 이런 경험이 있습니다.
       </motion.div>
       <Box borderLeft={"3px solid"} className={"career-header-box"}>
         <Box className={"career-header-box-placing"} />

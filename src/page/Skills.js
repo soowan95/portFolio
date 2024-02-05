@@ -33,7 +33,7 @@ function Skills({ handleScroll }) {
           >
             SKILLS
           </Box>
-          ❕ 저는 이런걸 할 수 있습니다.
+          🙆‍♂️ 저는 이런걸 할 수 있습니다.
         </motion.div>
         <Box className={"skills-body-title1"}>
           중앙정보처리학원에서 Java 기반 풀스택 강의를 들의며 프로그래밍에 대한
@@ -256,7 +256,7 @@ function Skills({ handleScroll }) {
           >
             SKILLS
           </Box>
-          ❕ 저는 이런걸 할 수 있습니다.
+          🙆‍♂️ 저는 이런걸 할 수 있습니다.
         </motion.div>
         <Box className={"skills-body-title1"}>
           Java 기반 풀스택 강의를 들의며 프로그래밍에 대한 기초 기식을

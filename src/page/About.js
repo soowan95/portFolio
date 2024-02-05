@@ -47,7 +47,7 @@ function About({ handleScroll }) {
         >
           ABOUT ME
         </Box>
-        ❔ 저는 이런 사람입니다.
+        📢 저는 이런 사람입니다.
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}

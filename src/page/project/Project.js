@@ -51,7 +51,7 @@ function Project({ handleScroll, setPageName }) {
           >
             PROJECT
           </Box>
-          🖥 저의 프로젝트들입니다.
+          🗃 저의 프로젝트들입니다.
         </motion.div>
         <Box className={"project-body-title"}>
           팀원들과 함께 고민하고 오류를 해결해 나아가는 과정이 즐거웠습니다.
@@ -323,7 +323,7 @@ function Project({ handleScroll, setPageName }) {
           >
             PROJECT
           </Box>
-          🖥 저의 프로젝트들입니다.
+          🗃 저의 프로젝트들입니다.
         </motion.div>
         <Box className={"project-body-title"}>
           팀원들과 함께 고민하고 오류를 해결해 나아가는 과정이 즐거웠습니다.

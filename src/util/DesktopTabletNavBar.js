@@ -33,6 +33,7 @@ function DesktopTabletNavBar({ scrollToComp }) {
         text={"project"}
         scrollToComp={scrollToComp}
       />
+      <NavButton comp={"study"} text={"study"} scrollToComp={scrollToComp} />
     </>
   );
 }
