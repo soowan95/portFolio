@@ -27,7 +27,13 @@ function Crello({ setPageName }) {
         <Breadcrumb separator="-" className={"project-detail-nav"}>
           <BreadcrumbItem>
             <Tooltip label={"홈으로"} placement={"top"}>
-              <Box onClick={() => setPageName("home")} cursor={"pointer"}>
+              <Box
+                onClick={() => {
+                  setPageName("home");
+                  navigate("/portfolio");
+                }}
+                cursor={"pointer"}
+              >
                 🔴
               </Box>
             </Tooltip>
