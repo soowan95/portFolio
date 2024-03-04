@@ -11,7 +11,23 @@ function CrelloFlow() {
           transition={{ duration: 1 }}
           className={"project-detail-title"}
         >
-          Spring Boot Flow
+          Spring Boot Flow{" "}
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: "1rem",
+              textDecoration: "underline",
+            }}
+          >
+            <a
+              href={
+                "https://www.figma.com/file/isBLbRBWNtfZBGTXD91Tuh/crello?type=whiteboard&t=1MKJKoiZQnVSl1mP-0"
+              }
+              target={"_blank"}
+            >
+              (go to figma)
+            </a>
+          </span>
         </motion.div>
         <motion.div
           style={{
@@ -41,7 +57,23 @@ function CrelloFlow() {
           transition={{ duration: 1 }}
           className={"project-detail-title"}
         >
-          Spring Boot Flow
+          Spring Boot Flow{" "}
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: "0.7rem",
+              textDecoration: "underline",
+            }}
+          >
+            <a
+              href={
+                "https://www.figma.com/file/isBLbRBWNtfZBGTXD91Tuh/crello?type=whiteboard&t=1MKJKoiZQnVSl1mP-0"
+              }
+              target={"_blank"}
+            >
+              (go to figma)
+            </a>
+          </span>
         </motion.div>
         <motion.div
           style={{

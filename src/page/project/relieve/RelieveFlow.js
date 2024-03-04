@@ -11,7 +11,23 @@ function RelieveFlow() {
           transition={{ duration: 1 }}
           className={"project-detail-title"}
         >
-          Spring Boot Flow
+          Spring Boot Flow{" "}
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: "1rem",
+              textDecoration: "underline",
+            }}
+          >
+            <a
+              href={
+                "https://www.figma.com/file/0cSSsTaQkMQQ0rewG0nYYq/relieve?type=design&mode=design&t=1MKJKoiZQnVSl1mP-0"
+              }
+              target={"_blank"}
+            >
+              (go to figma)
+            </a>
+          </span>
         </motion.div>
         <motion.div
           style={{
@@ -41,7 +57,23 @@ function RelieveFlow() {
           transition={{ duration: 1 }}
           className={"project-detail-title"}
         >
-          Spring Boot Flow
+          Spring Boot Flow{" "}
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: "0.7rem",
+              textDecoration: "underline",
+            }}
+          >
+            <a
+              href={
+                "https://www.figma.com/file/0cSSsTaQkMQQ0rewG0nYYq/relieve?type=design&mode=design&t=1MKJKoiZQnVSl1mP-0"
+              }
+              target={"_blank"}
+            >
+              (go to figma)
+            </a>
+          </span>
         </motion.div>
         <motion.div
           style={{

@@ -97,9 +97,7 @@ function CrelloInfo() {
                 transition={{ duration: 1, delay: 1.5 }}
                 className={"project-detail-info"}
               >
-                <ListItem>
-                  카카오톡, 네이버 소셜 로그인 & 이메일 인증 기능
-                </ListItem>
+                <ListItem>oauth 2.0</ListItem>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
@@ -255,9 +253,7 @@ function CrelloInfo() {
               transition={{ duration: 1 }}
               className={"project-detail-info"}
             >
-              <ListItem>
-                카카오톡, 네이버 소셜 로그인 & 이메일 인증 기능
-              </ListItem>
+              <ListItem>oauth 2.0</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}

@@ -74,7 +74,7 @@ function About({ handleScroll }) {
           </span>{" "}
           <br />
           <span className={"about-body-semi-title"}>
-            - 팀으로 운영되는 헬스 트레이너 팀, 특전부대 장교 출신!
+            - 팀과의 협력을 배운 이전의 경험, 특전부대 장교 출신!
           </span>
         </Box>
       </motion.div>
@@ -117,6 +117,15 @@ function About({ handleScroll }) {
             군 생활의 이러한 경험은 팀 프로젝트를 진행하면서 팀원들의 다양한
             의견을 수용하고 효과적으로 팀 혐업을 이끌어내는데 큰 도움이
             됐습니다.
+          </Box>
+        </Flex>
+        <Flex pl={"5px"} mt={"10px"}>
+          <Box fontSize={"0.3rem"} lineHeight={"23px"} mr={"10px"}>
+            <FontAwesomeIcon icon={faCircle} />
+          </Box>
+          <Box className={"about-body-content-text"}>
+            프로젝트 중 정기적인 회의를 통해 의견을 공유하고, 문제가 생겼을 때
+            충분한 대화를 통해 극복할 수 있었습니다.
           </Box>
         </Flex>
         <Box pl={"5px"} fontWeight={"bolder"} mt={"30px"}>
@@ -249,15 +258,6 @@ function About({ handleScroll }) {
             함께 해결하는 것의 중요함을 배웠습니다.
           </Box>
         </Flex>
-        <Flex pl={"5px"} mt={"10px"}>
-          <Box fontSize={"0.3rem"} lineHeight={"23px"} mr={"10px"}>
-            <FontAwesomeIcon icon={faCircle} />
-          </Box>
-          <Box className={"about-body-content-text"}>
-            여전히 저에게 주어진 일에 막중한 책임감을 느끼지만 어려움이 있을 때
-            팀원들과의 충분한 소통을 통해 극복해 나아가고 있습니다.
-          </Box>
-        </Flex>
       </Collapse>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -314,9 +314,8 @@ function About({ handleScroll }) {
             <FontAwesomeIcon icon={faCircle} />
           </Box>
           <Box className={"about-body-content-text"}>
-            전 직장에서 근무 중 개발에 대한 지식은 없었지만 여러 문서들의
-            전산화를 위해 구글 스프레드 시트와 Apps script를 공부하여
-            해결했습니다.
+            트레이너 생활 중 개발에 대한 지식은 없었지만 여러 문서들의 전산화를
+            위해 구글 스프레드 시트와 Apps script를 공부하여 해결했습니다.
           </Box>
         </Flex>
         <Flex pl={"5px"} mt={"10px"}>
@@ -429,7 +428,7 @@ function About({ handleScroll }) {
           저를 가장 잘 표현하는 키워드입니다.
         </Box>
         <Box textAlign={"center"} my={"20px"}>
-          항상 겸손한 마음으로 배우려 노력하겠습니다.
+          안되면 될때까지 끊임없이 시도하겠습니다.
         </Box>
       </motion.div>
     </>

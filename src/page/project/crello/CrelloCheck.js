@@ -46,8 +46,7 @@ function CrelloCheck() {
                 className={"project-detail-check"}
               >
                 <ListItem>
-                  axios interceptor을 사용하며 cors 오류를 경험하고 해결하는
-                  과정을 배움
+                  axios interceptor을 사용하며 cors에 대해 학습
                 </ListItem>
               </motion.div>
               <motion.div
@@ -101,7 +100,7 @@ function CrelloCheck() {
                 className={"project-detail-check"}
               >
                 <ListItem>
-                  1인 프로젝트를 진행하여 협업에 대한 경험 미흡
+                  1인 프로젝트를 진행하여 협업을 더 경험해 보고 싶다는 생각을 함
                 </ListItem>
               </motion.div>
               <motion.div
@@ -197,7 +196,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>cors 오류를 경험하고 해결하는 과정을 배움</ListItem>
+              <ListItem>cors에 대해 학습</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}
@@ -243,7 +242,7 @@ function CrelloCheck() {
               transition={{ duration: 1 }}
               className={"project-detail-check"}
             >
-              <ListItem>1인 프로젝트를 진행하여 협업에 대한 경험 미흡</ListItem>
+              <ListItem>협업에 대해 더 경험해 보고싶음</ListItem>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -10 }}

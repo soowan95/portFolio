@@ -45,7 +45,7 @@ function RelieveSkill() {
             transition={{ duration: 1, delay: 1.7 }}
             className={"project-detail-skill"}
           >
-            Spring Boot 3.1.7,
+            Spring Boot 3.x,
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -115,20 +115,12 @@ function RelieveSkill() {
             transition={{ duration: 1, delay: 1.5 }}
             className={"project-detail-skill"}
           >
-            Tomcat,
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.7 }}
-            className={"project-detail-skill"}
-          >
             Nginx,
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 2 }}
+            transition={{ duration: 1, delay: 1.7 }}
             className={"project-detail-skill"}
           >
             AWS EC2,
@@ -136,7 +128,7 @@ function RelieveSkill() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 2.2 }}
+            transition={{ duration: 1, delay: 2 }}
             className={"project-detail-skill"}
           >
             AWS RDS,
@@ -144,38 +136,13 @@ function RelieveSkill() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 2.5 }}
+            transition={{ duration: 1, delay: 2.2 }}
             className={"project-detail-skill"}
           >
             AWS S3
           </motion.div>
         </Flex>
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 1 }}
-          className={"project-detail-subtitle"}
-        >
-          OS
-        </motion.div>
-        <Flex className={"project-detail-skill-box"}>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.5 }}
-            className={"project-detail-skill"}
-          >
-            Window,
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.7 }}
-            className={"project-detail-skill"}
-          >
-            Ubuntu
-          </motion.div>
-        </Flex>
+
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
@@ -249,7 +216,7 @@ function RelieveSkill() {
             transition={{ duration: 1, delay: 0.7 }}
             className={"project-detail-skill"}
           >
-            Spring Boot 3.1.7
+            Spring Boot 3.x
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -331,20 +298,12 @@ function RelieveSkill() {
             transition={{ duration: 1, delay: 0.5 }}
             className={"project-detail-skill"}
           >
-            Tomcat
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            className={"project-detail-skill"}
-          >
             Nginx
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1, delay: 0.7 }}
             className={"project-detail-skill"}
           >
             AWS EC2
@@ -352,7 +311,7 @@ function RelieveSkill() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.2 }}
+            transition={{ duration: 1, delay: 1 }}
             className={"project-detail-skill"}
           >
             AWS RDS
@@ -360,40 +319,10 @@ function RelieveSkill() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.5 }}
+            transition={{ duration: 1, delay: 1.2 }}
             className={"project-detail-skill"}
           >
             AWS S3
-          </motion.div>
-        </SimpleGrid>
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className={"project-detail-subtitle"}
-        >
-          OS
-        </motion.div>
-        <SimpleGrid
-          columns={2}
-          spacing={10}
-          className={"project-detail-skill-box"}
-        >
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className={"project-detail-skill"}
-          >
-            Window
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            className={"project-detail-skill"}
-          >
-            Ubuntu
           </motion.div>
         </SimpleGrid>
         <motion.div
