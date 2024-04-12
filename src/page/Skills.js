@@ -60,7 +60,7 @@ function Skills({ handleScroll }) {
               <Box className={"skills-block-title"} color={"#0073bc"}>
                 JAVA
               </Box>
-              <Progress color={"#0073bc"} progress={"60%"} />
+              <Progress color={"#0073bc"} progress={"80%"} />
               <Box className={"skills-block-content"}>
                 앞으로 출시할 jdk lts 버전과의 원활한 마이그레이션과 jdk 8 이후
                 추가된 기능들을 사용하고자 jdk 17을 사용했고 코딩테스트로 java에
@@ -76,7 +76,7 @@ function Skills({ handleScroll }) {
               <Box className={"skills-block-title"} color={"#69bc4d"}>
                 SPRING BOOT
               </Box>
-              <Progress color={"#69bc4d"} progress={"50%"} />
+              <Progress color={"#69bc4d"} progress={"70%"} />
               <Box className={"skills-block-content"}>
                 spring을 사용하기 위해 was를 설정해야 하지만 학습해야 할 양이
                 방대하기에 spring boot를 사용했습니다. jdk 17 이후 버전과
@@ -93,7 +93,7 @@ function Skills({ handleScroll }) {
               <Box className={"skills-block-title"} color={"#f0db4e"}>
                 JAVASCRIPT
               </Box>
-              <Progress color={"#f0db4e"} progress={"30%"} />
+              <Progress color={"#f0db4e"} progress={"60%"} />
               <Box className={"skills-block-content"}>
                 학원 교육과정 중 처음으로 학습한 언어가 javascript입니다. 비교적
                 학습 장벽이 낮고 다양한 프레임워크와 호환되는 언어입니다. 백엔드
@@ -111,7 +111,7 @@ function Skills({ handleScroll }) {
               <Box className={"skills-block-title"} color={"#00d8fe"}>
                 REACT
               </Box>
-              <Progress color={"#00d8fe"} progress={"40%"} />
+              <Progress color={"#00d8fe"} progress={"50%"} />
               <Box className={"skills-block-content"}>
                 spa 프레임워크인 react는 초기 구동 속도는 느리지만 프로젝트의
                 복잡도를 줄이고 부드러운 사이트를 만들기 위해 프로젝트에
@@ -277,7 +277,7 @@ function Skills({ handleScroll }) {
             <Box className={"skills-block-title"} color={"#0073bc"}>
               JAVA
             </Box>
-            <Progress color={"#0073bc"} progress={"60%"} />
+            <Progress color={"#0073bc"} progress={"80%"} />
             <Box className={"skills-block-content"}>
               앞으로 출시할 jdk lts 버전과의 원활한 마이그레이션과 jdk 8 이후
               추가된 기능들을 사용하고자 jdk 17을 사용했고 코딩테스트로 java에
@@ -293,7 +293,7 @@ function Skills({ handleScroll }) {
             <Box className={"skills-block-title"} color={"#69bc4d"}>
               SPRING BOOT
             </Box>
-            <Progress color={"#69bc4d"} progress={"50%"} />
+            <Progress color={"#69bc4d"} progress={"70%"} />
             <Box className={"skills-block-content"}>
               spring을 사용하기 위해 was를 설정해야 하지만 학습해야 할 양이
               방대하기에 spring boot를 사용했습니다. jdk 17 이후 버전과 호환되는
@@ -310,7 +310,7 @@ function Skills({ handleScroll }) {
             <Box className={"skills-block-title"} color={"#f0db4e"}>
               JAVASCRIPT
             </Box>
-            <Progress color={"#f0db4e"} progress={"30%"} />
+            <Progress color={"#f0db4e"} progress={"60%"} />
             <Box className={"skills-block-content"}>
               백엔드 개발자가 되기 위해 java에 더 많은 투자를 했지만 node.js를
               통해 서버의 개발도 가능하다는 것을 인지하고 있어 추후 더 학습할
@@ -326,7 +326,7 @@ function Skills({ handleScroll }) {
             <Box className={"skills-block-title"} color={"#00d8fe"}>
               REACT
             </Box>
-            <Progress color={"#00d8fe"} progress={"40%"} />
+            <Progress color={"#00d8fe"} progress={"50%"} />
             <Box className={"skills-block-content"}>
               spa 프레임워크인 react는 초기 구동 속도는 느리지만 프로젝트의
               복잡도를 줄이고 부드러운 사이트를 만들기 위해 프로젝트에
