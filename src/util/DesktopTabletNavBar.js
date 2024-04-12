@@ -13,7 +13,7 @@ function DesktopTabletNavBar({ scrollToComp }) {
       </Box>
       <Box className={"nav-bar-name"}>김수완</Box>
       <Box textAlign={"center"} className={"nav-bar-info"} color={"black"}>
-        Back end developer
+        Developer
       </Box>
       <NavButton comp={"info"} text={"home"} scrollToComp={scrollToComp} />
       <NavButton comp={"about"} text={"about"} scrollToComp={scrollToComp} />
